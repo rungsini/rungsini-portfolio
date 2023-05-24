@@ -10,6 +10,8 @@ This is a project I did for my bachelor research paper, where I build a predicti
 - Optimised the SVD & ALS model.
 - The Project Write-up is published on SSRN
 
+![pic1](dv-2024.png)
+
 # [Project 2: Models for Medical Expenses caused by Viral Infections in Thailand](hyperlink)
 
 This was part of an internship project where a SPSS was used in order to created ....

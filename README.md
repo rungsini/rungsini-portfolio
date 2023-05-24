@@ -9,3 +9,11 @@ This is a project I did for my bachelor research paper, where I build a predicti
 - Algorithms Used: K-Nearest Neightbours, TF-IDFS, Singular Value Decomposition Model (SVD), Alternatining least Squre (ALS)
 - Optimised the SVD & ALS model.
 - The Project Write-up is published on SSRN
+
+# [Project 2: Models for Medical Expenses caused by Viral Infections in Thailand](hyperlink)
+
+This was part of an internship project where a SPSS was used in order to created ....
+
+# [Project 3: Visualization with rapid miner](hyperlink)
+
+This was part of a relevent course where a Rapid Miner was used in order to created data visualization ....

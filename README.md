@@ -1,5 +1,3 @@
-# Rungsini's Portfolio
-
 # [Project 1: Models for the number of cases with Dengue Hemorrhagic Fever]
 
 *This project, conducted as part of my bachelor's research paper, aimed to achieve the following* **objectives:**
@@ -33,14 +31,14 @@
 **Data Analysis and Statistics Used:**
 *The data was processed using the R programming language. The data analysis involved the application of the following statistical techniques:*
 **1. Data Visualization:** Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.
-- y และ เดือน ![Cases & Month](graph_pic/pic1.jpg)
-- y และ เดือน โดยแบ่งแกน x ตามภูมิภาค ![pic1](dv-2024.png)
-- y และ อุณหภูมิเฉลี่ย ![pic1](dv-2024.png)
-- y และ ปริมาณน้ำฝนเฉลี่ย ![pic1](dv-2024.png)
-- y และ จำนวนประชากร ![pic1](dv-2024.png)
-- y และ ขนาดพื้นที่ ![pic1](dv-2024.png)
-- y และ จำนวนโรงพยาบาล ![pic1](dv-2024.png)
-- See More R Code : https://github.com/rungsini/rungsini-portfolio/blob/bbcf5b645727af694e51340dc97c6e9d066d8237/graph_code.R
+- y และ เดือน ![pic1](graph_pic/pic1.jpg)
+- y และ เดือน โดยแบ่งแกน x ตามภูมิภาค ![pic2](graph_pic/pic2.jpg)
+- y และ อุณหภูมิเฉลี่ย ![pic3](graph_pic/pic3.jpg)
+- y และ ปริมาณน้ำฝนเฉลี่ย ![pic4](graph_pic/pic4.jpg)
+- y และ จำนวนประชากร ![pic5](graph_pic/pic5.jpg)
+- y และ ขนาดพื้นที่ ![pic6](graph_pic/pic6.jpg)
+- y และ จำนวนโรงพยาบาล ![pic7](graph_pic/pic7.jpg)
+- For additional R code, please refer to the following GitHub repository: GitHub - rungsini/rungsini-portfolio: Rungsini's Portfolio
 
 **2. Descriptive Analysis:** Describing the characteristics of the independent variables, which included average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable was the number of cases of dengue hemorrhagic fever.
 

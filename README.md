@@ -31,7 +31,7 @@
 **Data Analysis and Statistics Used:**
 *The data was processed using the R programming language. The data analysis involved the application of the following statistical techniques:*
 **1. Data Visualization:** Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.
-- Y-axis: Number of DHF (Cases) and X-axis: Time (Months) ![pic1](graph_pic/pic1.jpg)
+- Y-axis: Number of DHF (Cases) and X-axis: Time (Months) ![pic1](graph_pic/pic1.jpg) The Spaghetti Plot displays the number of patients with dengue fever categorized by month.
 - Y-axis: Number of DHF (Cases) and X-axis: Time (Months)-Divided by Geographic Region ![pic2](graph_pic/pic2.jpg)
 - Y-axis: Number of DHF (Cases) and X-axis: Average Temperature (°C) ![pic3](graph_pic/pic3.jpg)
 - Y-axis: Number of DHF (Cases) and X-axis: Rainfall Amount (Millimeters) ![pic4](graph_pic/pic4.jpg)

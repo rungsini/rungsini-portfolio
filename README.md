@@ -33,7 +33,7 @@
 **Data Analysis and Statistics Used:**
 *The data was processed using the R programming language. The data analysis involved the application of the following statistical techniques:*
 **1. Data Visualization:** Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.
-- y และ เดือน ![Cases & Month](pic1.jpg)
+- y และ เดือน ![Cases & Month](graph_pic/pic1.jpg)
 - y และ เดือน โดยแบ่งแกน x ตามภูมิภาค ![pic1](dv-2024.png)
 - y และ อุณหภูมิเฉลี่ย ![pic1](dv-2024.png)
 - y และ ปริมาณน้ำฝนเฉลี่ย ![pic1](dv-2024.png)

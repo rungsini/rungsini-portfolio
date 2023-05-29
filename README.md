@@ -38,7 +38,7 @@
 - y และ จำนวนประชากร ![pic5](graph_pic/pic5.jpg)
 - y และ ขนาดพื้นที่ ![pic6](graph_pic/pic6.jpg)
 - y และ จำนวนโรงพยาบาล ![pic7](graph_pic/pic7.jpg)
-- For additional R code, please refer to the following GitHub repository: GitHub - rungsini/rungsini-portfolio: Rungsini's Portfolio
+- For additional R code, please refer to the following GitHub repository: graph_code.R
 
 **2. Descriptive Analysis:** Describing the characteristics of the independent variables, which included average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable was the number of cases of dengue hemorrhagic fever.
 

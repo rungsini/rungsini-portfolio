@@ -1,11 +1,11 @@
 # [Project 1: Models for the number of cases with Dengue Hemorrhagic Fever]
 
-*This project, conducted as part of my bachelor's research paper, aimed to achieve the following* **objectives:**
+## This project, conducted as part of my bachelor's research paper, aimed to achieve the following objectives:
 - To examine appropriate models for estimating the prevalence of Dengue Hemorrhagic Fever (DHF) among patients in different regions of Thailand.
 - To explore the factors associated with the incidence of Dengue Hemorrhagic Fever (DHF).
 - To present the findings using visually engaging and informative graphs.
 
-**Data Sources:**
+## **Data Sources:**
 *This project is a retrospective descriptive study, conducted through a review of historical data.*
 - The dengue cases were obtained from the Disease Control Office (No. 506) of the Department of Disease Control, comprising a total of 140,256 individuals.
 - Population data was sourced from the National Statistical Office.
@@ -13,20 +13,20 @@
 - Hospital data was provided by the Ministry of Public Health.
 - Average temperature and rainfall data were collected from the Meteorological Department.
 
-**Study Details:**
+## **Study Details:**
 - The study population consisted of dengue cases reported in each province of Thailand from January 2017 to June 2020.
 - The study period spanned 42 months or 3 years and 6 months, starting from January 2560 to June 2563.
 - Variables studied: Province, Region, Year, Month, Average Temperature, Rainfall Amount, Population Size, Area, Number of Hospitals.
 - The study investigated the number of cases of Dengue Hemorrhagic Fever in the Central, Eastern, Western, and Southern regions of Thailand, utilizing data from all 52 provinces in the country.
 
-**Data Cleaning:**
+## **Data Cleaning:**
 *Data was collected from various sources and compiled in Excel for preparation in SPSS for the subsequent cleaning process.*
 - Importing the Data: The secondary data collected from various sources is imported into SPSS.
 - Data Inspection: The imported data undergoes a visual inspection to identify any inconsistencies, missing values, or formatting issues.
 - Handling Missing Values: Missing values are handled by examining the extent and patterns of missingness. Depending on the situation, they can be deleted, imputed using appropriate methods, or treated as a separate category.
 - Dealing with Outliers: Outliers, which are extreme values deviating significantly from the rest of the data, are identified and appropriately addressed. They can be removed, recoded, or analyzed separately.
 
-**Data Analysis and Statistics Used:**
+## **Data Analysis and Statistics Used:**
 *The data was processed using the R programming language. The data analysis involved the application of the following statistical techniques:*
 
 #### **1. Data Visualization:** Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.

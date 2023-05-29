@@ -2,10 +2,10 @@
 
 # [Project 1: Models for the number of cases with Dengue Hemorrhagic Fever]
 
-This project, conducted as part of my bachelor's research paper, aimed to achieve the following objectives:
-1. To examine appropriate models for estimating the prevalence of Dengue Hemorrhagic Fever (DHF) among patients in different regions of Thailand.
-2. To explore the factors associated with the incidence of Dengue Hemorrhagic Fever (DHF).
-3. To present the findings using visually engaging and informative graphs.
+*This project, conducted as part of my bachelor's research paper, aimed to achieve the following* **objectives:**
+- To examine appropriate models for estimating the prevalence of Dengue Hemorrhagic Fever (DHF) among patients in different regions of Thailand.
+- To explore the factors associated with the incidence of Dengue Hemorrhagic Fever (DHF).
+- To present the findings using visually engaging and informative graphs.
 
 **Data Sources:**
 *This project is a retrospective descriptive study, conducted through a review of historical data.*

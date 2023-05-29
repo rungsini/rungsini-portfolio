@@ -31,14 +31,14 @@
 **Data Analysis and Statistics Used:**
 *The data was processed using the R programming language. The data analysis involved the application of the following statistical techniques:*
 **1. Data Visualization:** Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.
-- y และ เดือน ![pic1](graph_pic/pic1.jpg)
-- y และ เดือน โดยแบ่งแกน x ตามภูมิภาค ![pic2](graph_pic/pic2.jpg)
-- y และ อุณหภูมิเฉลี่ย ![pic3](graph_pic/pic3.jpg)
-- y และ ปริมาณน้ำฝนเฉลี่ย ![pic4](graph_pic/pic4.jpg)
-- y และ จำนวนประชากร ![pic5](graph_pic/pic5.jpg)
-- y และ ขนาดพื้นที่ ![pic6](graph_pic/pic6.jpg)
-- y และ จำนวนโรงพยาบาล ![pic7](graph_pic/pic7.jpg)
-- For additional R code, please refer to the following GitHub repository: graph_code.R
+- Y-axis: Number of DHF (Cases) and X-axis: Time (Months) ![pic1](graph_pic/pic1.jpg)
+- Y-axis: Number of DHF (Cases) and X-axis: Time (Months)-Divided by Geographic Region ![pic2](graph_pic/pic2.jpg)
+- Y-axis: Number of DHF (Cases) and X-axis: Average Temperature (°C) ![pic3](graph_pic/pic3.jpg)
+- Y-axis: Number of DHF (Cases) and X-axis: Rainfall Amount (Millimeters) ![pic4](graph_pic/pic4.jpg)
+- Y-axis: Number of DHF (Cases) and X-axis: Population Size (Individuals) ![pic5](graph_pic/pic5.jpg)
+- Y-axis: Number of DHF (Cases) and X-axis: Area (Square Kilometers) ![pic6](graph_pic/pic6.jpg)
+- Y-axis: Number of DHF (Cases) and X-axis: Number of Hospitals (Units) ![pic7](graph_pic/pic7.jpg)
+- For additional R code, please refer to the following GitHub repository: [graph_code.R](https://github.com/rungsini/rungsini-portfolio/blob/f83c734c54f87be5800fa53964aefb2d838cc98e/graph_code.R)
 
 **2. Descriptive Analysis:** Describing the characteristics of the independent variables, which included average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable was the number of cases of dengue hemorrhagic fever.
 

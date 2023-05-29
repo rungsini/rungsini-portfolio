@@ -33,7 +33,9 @@
 
 #### Example :
 - **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)** ![pic1](graph_pic/pic1.jpg)
-
+`p = ggplot(data = num, aes(x=Date, y=Cases)) + geom_line(aes(colour=Province),size = 1)+ theme_classic() + scale_x_datetime(breaks = date_breaks("1 month"),labels = date_format("%m-%y"))+ theme(axis.text.x = element_text(angle = 60, vjust = 0.5, hjust=1))
+p + ggtitle("Spaghetti Plot of Cases") + xlab("\nMonth") + theme(plot.title = element_text(hjust = 0.5, face = 'bold', size = 25)) 
+p`
 - **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)-Divided by Geographic Region** ![pic2](graph_pic/pic2.jpg) The Spaghetti Plot, depicting the number of dengue fever patients each year categorized by region, reveals a similar pattern across all regions. In each year, the number of patients tends to increase. There is a peak point during the rainy season of each year where the number of patients reaches its highest. Additionally, the data suggests a seasonal cyclicality.
 
 - **Y-axis: Number of DHF (Cases) and X-axis: Average Temperature (°C)** ![pic3](graph_pic/pic3.jpg) The Scatter Plot shows the relationship between dengue fever cases and average temperature. It reveals a concentration of cases within the 28-32 degrees Celsius temperature range. However, caution is warranted due to potential data collection inconsistencies and Thailand's consistently warm climate, which ranges from 28-35 degrees Celsius on average. Therefore, definitive conclusions about data accuracy cannot be drawn from this graph alone.

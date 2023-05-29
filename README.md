@@ -1,6 +1,6 @@
 # [Project 1: Models for the number of cases with Dengue Hemorrhagic Fever]
 
-*This project, conducted as part of my bachelor's research paper, aimed to achieve the following* **objectives:**
+## *This project, conducted as part of my bachelor's research paper, aimed to achieve the following* **objectives:**
 - To examine appropriate models for estimating the prevalence of Dengue Hemorrhagic Fever (DHF) among patients in different regions of Thailand.
 - To explore the factors associated with the incidence of Dengue Hemorrhagic Fever (DHF).
 - To present the findings using visually engaging and informative graphs.
@@ -31,11 +31,14 @@
 **Data Analysis and Statistics Used:**
 *The data was processed using the R programming language. The data analysis involved the application of the following statistical techniques:*
 **1. Data Visualization:** Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.
-- The Spaghetti Plot displays the number of patients with dengue fever categorized by month. Y-axis: Number of DHF (Cases) and X-axis: Time (Months) ![pic1](graph_pic/pic1.jpg)
+## Example :
+- Y-axis: Number of DHF (Cases) and X-axis: Time (Months) ![pic1](graph_pic/pic1.jpg) The Spaghetti Plot displays the number of patients with dengue fever categorized by month.
 - Y-axis: Number of DHF (Cases) and X-axis: Time (Months)-Divided by Geographic Region ![pic2](graph_pic/pic2.jpg)
-- Y-axis: Number of DHF (Cases) and X-axis: Average Temperature (°C) ![pic3](graph_pic/pic3.jpg)
-- Y-axis: Number of DHF (Cases) and X-axis: Rainfall Amount (Millimeters) ![pic4](graph_pic/pic4.jpg)
-- Y-axis: Number of DHF (Cases) and X-axis: Population Size (Individuals) ![pic5](graph_pic/pic5.jpg)
+- Y-axis: Number of DHF (Cases) and X-axis: Average Temperature (°C) ![pic3](graph_pic/pic3.jpg) The Scatter Plot shows the relationship between dengue fever cases and average temperature. It reveals a concentration of cases within the 28-32 degrees Celsius temperature range. However, caution is warranted due to potential data collection inconsistencies and Thailand's consistently warm climate, which ranges from 28-35 degrees Celsius on average. Therefore, definitive conclusions about data accuracy cannot be drawn from this graph alone.
+- Y-axis: Number of DHF (Cases) and X-axis: Rainfall Amount (Millimeters) ![pic4](graph_pic/pic4.jpg) 
+From the Scatter Plot, which displays the number of patients with dengue fever and the rainfall quantity, it can be observed that the graph line tends to increase and extend horizontally. Generally, a higher number of patients are observed in the range of 0-500 millimeters of rainfall. However, it is still difficult to draw significant conclusions from the data.
+- Y-axis: Number of DHF (Cases) and X-axis: Population Size (Individuals) ![pic5](graph_pic/pic5.jpg) 
+The graph demonstrates a positive correlation between the number of dengue fever patients and the population count. As the population increases in each province, there is a clear trend of the number of patients also increasing.
 - Y-axis: Number of DHF (Cases) and X-axis: Area (Square Kilometers) ![pic6](graph_pic/pic6.jpg)
 - Y-axis: Number of DHF (Cases) and X-axis: Number of Hospitals (Units) ![pic7](graph_pic/pic7.jpg)
 - For additional R code, please refer to the following GitHub repository: [graph_code.R](https://github.com/rungsini/rungsini-portfolio/blob/f83c734c54f87be5800fa53964aefb2d838cc98e/graph_code.R)

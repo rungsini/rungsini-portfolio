@@ -31,7 +31,7 @@
 
 #### **1. Data Visualization:** Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.
 
-#### Example :
+##### Example :
 - **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)** ![pic1](graph_pic/pic1.jpg)
 - **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)-Divided by Geographic Region** ![pic2](graph_pic/pic2.jpg) The Spaghetti Plot, depicting the number of dengue fever patients each year categorized by region, reveals a similar pattern across all regions. In each year, the number of patients tends to increase. There is a peak point during the rainy season of each year where the number of patients reaches its highest. Additionally, the data suggests a seasonal cyclicality.
 - **Y-axis: Number of DHF (Cases) and X-axis: Average Temperature (°C)** ![pic3](graph_pic/pic3.jpg) The Scatter Plot shows the relationship between dengue fever cases and average temperature. It reveals a concentration of cases within the 28-32 degrees Celsius temperature range. However, caution is warranted due to potential data collection inconsistencies and Thailand's consistently warm climate, which ranges from 28-35 degrees Celsius on average. Therefore, definitive conclusions about data accuracy cannot be drawn from this graph alone.
@@ -43,15 +43,18 @@ The graph demonstrates a positive correlation between the number of dengue fever
 - **Y-axis: Number of DHF (Cases) and X-axis: Number of Hospitals (Units)** ![pic7](graph_pic/pic7.jpg) The scatter plot clearly shows a noticeable trend between the number of dengue fever patients and the number of hospitals: as the number of hospitals increases, the number of patients tends to increase as well. However, it may not accurately represent the true trend due to the significantly higher number of hospitals in Bangkok (138) compared to other provinces, where the number of hospitals does not exceed 50. This suggests that the data from Bangkok heavily influences the upward trajectory of the graph.
 - *For additional R code, please refer to the following GitHub repository: [graph_code.R](https://github.com/rungsini/rungsini-portfolio/blob/f83c734c54f87be5800fa53964aefb2d838cc98e/graph_code.R)
 
-**2. Descriptive Analysis:** Describing the characteristics of the independent variables, which included average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable was the number of cases of dengue hemorrhagic fever.
+#### **2. Descriptive Analysis:** 
+Describing the characteristics of the independent variables, which included average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable was the number of cases of dengue hemorrhagic fever.
 
 ![pic1](dv-2024.png)
 
-**3. Correlation Analysis:** Employing Spearman's correlation method to examine the relationships between variables.
+#### **3. Correlation Analysis:** 
+Employing Spearman's correlation method to examine the relationships between variables.
 
 ![pic1](dv-2024.png)
 
-**4. Regression Analysis:** Analyzing the relationships between the average temperature, rainfall amount, population size, area size, number of hospitals, and the number of cases of dengue hemorrhagic fever. **The Generalized Least Squares** method, a commonly used regression technique, was employed to develop a model for predicting the number of dengue hemorrhagic fever cases.
+#### **4. Regression Analysis:** 
+Analyzing the relationships between the average temperature, rainfall amount, population size, area size, number of hospitals, and the number of cases of dengue hemorrhagic fever. **The Generalized Least Squares** method, a commonly used regression technique, was employed to develop a model for predicting the number of dengue hemorrhagic fever cases.
 
 - ตัวอย่าง ตัวแบบสำหรับจำนวนผู้ป่วยโรคไข้เลือดออกของภาคกลาง
 - พหุคูณ Model : จำนวนผู้ป่วยโรคไข้เลือดออก ~ ปี + เดือน + อุณหภูมิอากาศเฉลี่ย + ปริมาณน้ำฝน + จำนวนประชากร + ขนาดพื้นที่ + จำนวนโรงพยาบาล

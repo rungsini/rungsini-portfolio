@@ -1,6 +1,6 @@
 # [Project 1: Models for the number of cases with Dengue Hemorrhagic Fever]
 
-## *This project, conducted as part of my bachelor's research paper, aimed to achieve the following* **objectives:**
+*This project, conducted as part of my bachelor's research paper, aimed to achieve the following* **objectives:**
 - To examine appropriate models for estimating the prevalence of Dengue Hemorrhagic Fever (DHF) among patients in different regions of Thailand.
 - To explore the factors associated with the incidence of Dengue Hemorrhagic Fever (DHF).
 - To present the findings using visually engaging and informative graphs.
@@ -26,8 +26,6 @@
 - Handling Missing Values: Missing values are handled by examining the extent and patterns of missingness. Depending on the situation, they can be deleted, imputed using appropriate methods, or treated as a separate category.
 - Dealing with Outliers: Outliers, which are extreme values deviating significantly from the rest of the data, are identified and appropriately addressed. They can be removed, recoded, or analyzed separately.
 
-![pic1](dv-2024.png)
-
 **Data Analysis and Statistics Used:**
 *The data was processed using the R programming language. The data analysis involved the application of the following statistical techniques:*
 **1. Data Visualization:** Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.
@@ -39,8 +37,8 @@
 From the Scatter Plot, which displays the number of patients with dengue fever and the rainfall quantity, it can be observed that the graph line tends to increase and extend horizontally. Generally, a higher number of patients are observed in the range of 0-500 millimeters of rainfall. However, it is still difficult to draw significant conclusions from the data.
 - Y-axis: Number of DHF (Cases) and X-axis: Population Size (Individuals) ![pic5](graph_pic/pic5.jpg) 
 The graph demonstrates a positive correlation between the number of dengue fever patients and the population count. As the population increases in each province, there is a clear trend of the number of patients also increasing.
-- Y-axis: Number of DHF (Cases) and X-axis: Area (Square Kilometers) ![pic6](graph_pic/pic6.jpg)
-- Y-axis: Number of DHF (Cases) and X-axis: Number of Hospitals (Units) ![pic7](graph_pic/pic7.jpg)
+- Y-axis: Number of DHF (Cases) and X-axis: Area (Square Kilometers) ![pic6](graph_pic/pic6.jpg) From the scatter plot graph depicting the number of dengue fever patients and the area size, it can be observed that the graph trend is not very distinct. This is because Bangkok, the capital city, has a relatively small area compared to its population. Additionally, Bangkok's status as the capital leads to a high concentration of people residing there. As a result, the number of patients does not align well with the area size.
+- Y-axis: Number of DHF (Cases) and X-axis: Number of Hospitals (Units) ![pic7](graph_pic/pic7.jpg) The scatter plot clearly shows a noticeable trend between the number of dengue fever patients and the number of hospitals: as the number of hospitals increases, the number of patients tends to increase as well. However, it may not accurately represent the true trend due to the significantly higher number of hospitals in Bangkok (138) compared to other provinces, where the number of hospitals does not exceed 50. This suggests that the data from Bangkok heavily influences the upward trajectory of the graph.
 - For additional R code, please refer to the following GitHub repository: [graph_code.R](https://github.com/rungsini/rungsini-portfolio/blob/f83c734c54f87be5800fa53964aefb2d838cc98e/graph_code.R)
 
 **2. Descriptive Analysis:** Describing the characteristics of the independent variables, which included average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable was the number of cases of dengue hemorrhagic fever.

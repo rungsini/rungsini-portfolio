@@ -28,7 +28,9 @@
 
 **Data Analysis and Statistics Used:**
 *The data was processed using the R programming language. The data analysis involved the application of the following statistical techniques:*
-**1. Data Visualization:** Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.
+
+### **1. Data Visualization:** Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.
+
 ## Example :
 - **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)** ![pic1](graph_pic/pic1.jpg)
 - **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)-Divided by Geographic Region** ![pic2](graph_pic/pic2.jpg) The Spaghetti Plot, depicting the number of dengue fever patients each year categorized by region, reveals a similar pattern across all regions. In each year, the number of patients tends to increase. There is a peak point during the rainy season of each year where the number of patients reaches its highest. Additionally, the data suggests a seasonal cyclicality.

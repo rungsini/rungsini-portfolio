@@ -33,9 +33,7 @@
 
 #### Example :
 - **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)** ![pic1](graph_pic/pic1.jpg)
-`p = ggplot(data = num, aes(x=Date, y=Cases)) + geom_line(aes(colour=Province),size = 1)+ theme_classic() + scale_x_datetime(breaks = date_breaks("1 month"),labels = date_format("%m-%y"))+ theme(axis.text.x = element_text(angle = 60, vjust = 0.5, hjust=1))
-p + ggtitle("Spaghetti Plot of Cases") + xlab("\nMonth") + theme(plot.title = element_text(hjust = 0.5, face = 'bold', size = 25)) 
-p`
+
 - **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)-Divided by Geographic Region** ![pic2](graph_pic/pic2.jpg) The Spaghetti Plot, depicting the number of dengue fever patients each year categorized by region, reveals a similar pattern across all regions. In each year, the number of patients tends to increase. There is a peak point during the rainy season of each year where the number of patients reaches its highest. Additionally, the data suggests a seasonal cyclicality.
 
 - **Y-axis: Number of DHF (Cases) and X-axis: Average Temperature (°C)** ![pic3](graph_pic/pic3.jpg) The Scatter Plot shows the relationship between dengue fever cases and average temperature. It reveals a concentration of cases within the 28-32 degrees Celsius temperature range. However, caution is warranted due to potential data collection inconsistencies and Thailand's consistently warm climate, which ranges from 28-35 degrees Celsius on average. Therefore, definitive conclusions about data accuracy cannot be drawn from this graph alone.
@@ -50,7 +48,7 @@ The graph demonstrates a positive correlation between the number of dengue fever
 
 - **Y-axis: Number of DHF (Cases) and X-axis: Number of Hospitals (Units)** ![pic7](graph_pic/pic7.jpg) The scatter plot clearly shows a noticeable trend between the number of dengue fever patients and the number of hospitals: as the number of hospitals increases, the number of patients tends to increase as well. However, it may not accurately represent the true trend due to the significantly higher number of hospitals in Bangkok (138) compared to other provinces, where the number of hospitals does not exceed 50. This suggests that the data from Bangkok heavily influences the upward trajectory of the graph.
 
-- *For additional R code, please refer to the following GitHub repository:* [graph_code.R](https://github.com/rungsini/rungsini-portfolio/blob/f83c734c54f87be5800fa53964aefb2d838cc98e/graph_code.R)
+- **For additional R code, please refer to the following GitHub repository:** [graph_code.R](https://github.com/rungsini/rungsini-portfolio/blob/f83c734c54f87be5800fa53964aefb2d838cc98e/graph_code.R)
 
 #### **2. Descriptive Analysis:** Describing the characteristics of the independent variables, which included average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable was the number of cases of dengue hemorrhagic fever.
 

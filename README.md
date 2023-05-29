@@ -29,7 +29,7 @@
 **Data Analysis and Statistics Used:**
 *The data was processed using the R programming language. The data analysis involved the application of the following statistical techniques:*
 
-### **1. Data Visualization:** Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.
+#### **1. Data Visualization:** Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.
 
 #### Example :
 - **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)** ![pic1](graph_pic/pic1.jpg)

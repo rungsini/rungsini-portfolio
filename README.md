@@ -31,7 +31,7 @@
 
 ### **1. Data Visualization:** Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.
 
-## Example :
+#### Example :
 - **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)** ![pic1](graph_pic/pic1.jpg)
 - **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)-Divided by Geographic Region** ![pic2](graph_pic/pic2.jpg) The Spaghetti Plot, depicting the number of dengue fever patients each year categorized by region, reveals a similar pattern across all regions. In each year, the number of patients tends to increase. There is a peak point during the rainy season of each year where the number of patients reaches its highest. Additionally, the data suggests a seasonal cyclicality.
 - **Y-axis: Number of DHF (Cases) and X-axis: Average Temperature (°C)** ![pic3](graph_pic/pic3.jpg) The Scatter Plot shows the relationship between dengue fever cases and average temperature. It reveals a concentration of cases within the 28-32 degrees Celsius temperature range. However, caution is warranted due to potential data collection inconsistencies and Thailand's consistently warm climate, which ranges from 28-35 degrees Celsius on average. Therefore, definitive conclusions about data accuracy cannot be drawn from this graph alone.

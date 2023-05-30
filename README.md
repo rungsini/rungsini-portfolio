@@ -54,14 +54,14 @@ The graph demonstrates a positive correlation between the number of dengue fever
 ### **2. Descriptive Analysis:** 
 *Describing the characteristics of the independent variables, which included average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable was the number of cases of dengue hemorrhagic fever.*
 
-| Variable| Min | Max | Mean | S.D. |
-| ------ | --- | --- | --- | --- |
-| Cases | 0 | 1,709 | 64.22| 139.4 |
-| Avg.temp | 19.4 | 33.5 | 27.92| 1.9006 |
-| Rainfall | 6 | 1,772.70 | 148.8| 170.3908 |
-| Population | 177,338 | 5,686,646 | 957,267| 831,763.20 |
-| Area | 543 | 20,494 | 8,209| 4,702.68 |
-| No. of Hospital | 6 | 138 | 19.38| 19.0732 |
+| Variable        | Min     | Max       | Mean   | S.D.       |
+| --------------- | ------- | --------- | ------ | ---------- |
+| Cases           | 0       | 1,709     | 64.22  | 139.4      |
+| Avg.temp        | 19.4    | 33.5      | 27.92  | 1.9006     |
+| Rainfall        | 6       | 1,772.70  | 148.8  | 170.3908   |
+| Population      | 177,338 | 5,686,646 | 957,267| 831,763.20 |
+| Area            | 543     | 20,494    | 8,209  | 4,702.68   |
+| No. of Hospital | 6       | 138       | 19.38  | 19.0732    |
 
 The table reveals the following characteristics:
 -Number of patients: Min = 0, Max = 1,709, Average = 64.22 (right-skewed)
@@ -74,14 +74,14 @@ The table reveals the following characteristics:
 ### **3. Correlation Analysis:** 
 *Employing Spearman's correlation method to examine the relationships between variables.*
 
-| Variable | Correlation Coefficient | p-value | 
-| ------ | --- | --- | 
-| Cases | 1.000 | - |
-| Avg.temp | 0.290* | 0.000 | 
-| Rainfall | 0.134* | 0.000 | 
-| Population | 0.418* | 0.000 | 
-| Area | 0.100* | 0.000 | 
-| No. of Hospital | 0.382* | 0.000 | 
+| Variable        | Correlation Coefficient | p-value | 
+| --------------- | ----------------------- | -----   | 
+| Cases           | 1.000                   | -       |
+| Avg.temp        | 0.290*                  | 0.000   | 
+| Rainfall        | 0.134*                  | 0.000   | 
+| Population      | 0.418*                  | 0.000   | 
+| Area            | 0.100*                  | 0.000   | 
+| No. of Hospital | 0.382*                  | 0.000   | 
 *The statistical significance level at 0.05.
 
 From Table, which the correlation coefficients for average temperature, rainfall amount, population size, area size, and number of hospitals are 0.290, 0.134, 0.418, 0.100, and 0.382, respectively. All factors have a p-value of 0.000, indicating a significant correlation with the number of dengue hemorrhagic fever cases. Therefore, these factors will be used to develop a suitable model.
@@ -110,29 +110,6 @@ and when examining the variance and autocorrelation within the variable itself, 
 - **Autocorrelation Examination in GLS Model:** ![pic12](acf-pacf_gls.jpg) From the figure, it is evident that the model has a p = 0 and a q = 0, indicating no significant autocorrelation. Additionally, the regression analysis table is obtained as follows.
 
 - **The Regression Coefficients Table Obtained from GLS Model:**
-| Variables | Coefficient | Standard Error | T-Test Statistic | p-value |
-| --------- | ----------- | -------------- | ---------------- | ------- |
-| (Intercept)        | -3.820116   | 5.185944       | -0.736629      | 0.4620  |
-| 2561               | -0.819349   | 0.594308       | -1.378661      | 0.1692  |
-| 2562               | -1.402175   | 0.462402       | -3.032375      | 0.0027  |
-| 2563               | -0.475562   | 0.349215       | -1.361804      | 0.1745  |
-| Feb                | -0.172045   | 0.137995       | -1.246745      | 0.2137  |
-| Mar               | 1.045374    | 0.615364       | 1.698790       | 0.0906  |
-| Apr               | -3.482190   | 0.799438       | -4.355799      | 0.0000  |
-| May                | -1.159636   | 0.704213       | -1.646713      | 0.1009  |
-| Jun               | 2.597360    | 0.462181       | 5.619790       | 0.0000  |
-| Jul                | -0.531709   | 0.467026       | -1.138500      | 0.2560  |
-| Aug                | -1.176431   | 0.339141       | -3.468857      | 0.0006  |
-| Sep                | 1.052470    | 0.256250       | 4.107206       | 0.0001  |
-| Oct                | -0.035020   | 0.211972       | -0.165211      | 0.8689  |
-| Nov                | -0.210175   | 0.183035       | -1.148278      | 0.2520  |
-| Dec                | 0.156560    | 0.163766       | 0.955998       | 0.3400  |
-| Avg.Temp           | 0.265764    | 0.152322       | 1.744754       | **0.0823**  |
-| Rainfall           | 0.001560    | 0.001064       | 1.466362       | **0.1438**  |
-| Population         | -0.000011   | 0.000007       | -1.655837      | **0.0990**  |
-| Population^2^      | 0.000000    | 0.000000       | 1.048774       | **0.2953**  |
-| Area               | 0.000602    | 0.000205       | 2.942650       | 0.0036  |
-| No. of Hospital    | 0.316682    | 0.140885       | 2.247801       | 0.0255  |
 
 | Variables      | Coefficient | Standard Error | T-Test Statistic | p-value |
 | -------------- | ----------- | -------------- | ---------------- | ------- |
@@ -160,9 +137,12 @@ and when examining the variance and autocorrelation within the variable itself, 
 
 From Table, the p-values for average temperature, rainfall amount, population, and population squared are 0.0823, 0.1438, 0.0990, and 0.2953, respectively. These factors are not statistically significant at the 0.05 level and do not affect the number of dengue fever cases. Therefore, they are excluded from the model, resulting in the optimal model for the number of dengue fever cases in the central region as...
 
-- GLS Model ที่ปรับปรุงแล้วในภาคกลาง : รูท จำนวนผู้ป่วยโรคไข้เลือดออก ~ ปี + เดือน + ขนาดพื้นที่ + จำนวนโรงพยาบาล
-- ตรวจสอบความแปรปรวนของ GLS Model ที่ปรับปรุงแล้วในภาคกลาง : ![pic1](dv-2024.png)
-- ตรวจสอบสหสัมพันธ์ในตัวเองของตัวแปรของ GLS Model ที่ปรับปรุงแล้วในภาคกลาง : ![pic1](dv-2024.png)
+- **Adjusted GLS Model in Central Region:** *&radic;Number of DHF (Cases) ~ Year + Month + Area + Number of Hospitals* and when examining the variance and autocorrelation within the variable itself, the following patterns are observed
+
+- **Variance Assessment of Adjusted GLS Model:** ![pic13](adj_var_gls.jpg) ยังไม่ได้แปล
+
+- **Autocorrelation Examination in Adjusted GLS Model:** ![pic14](acf-pacf_adj_gls.jpg) ยังไม่ได้แปล
+
 - Histogram ของส่วนเหลือในภาคกลาง : ![pic1](dv-2024.png)
 - ตารางสปสการถดถอยที่ได้จาก GLS Model ที่ปรับปรุงแล้วในภาคกลาง : ![pic1](dv-2024.png)
 - ตัวแบบที่เหมาะสมสำหรับจำนวนผู้ป่วยโรคไข้เลือดออกในภาคกลาง : ![pic1](dv-2024.png)

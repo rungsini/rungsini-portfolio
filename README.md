@@ -54,7 +54,7 @@ The graph demonstrates a positive correlation between the number of dengue fever
 ### **2. Descriptive Analysis:** 
 *Describing the characteristics of the independent variables, which included average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable was the number of cases of dengue hemorrhagic fever.*
 
-| Variables | Min | Max | Mean | S.D. |
+| Variable| Min | Max | Mean | S.D. |
 | ------ | --- | --- | --- | --- |
 | Cases | 0 | 1,709 | 64.22| 139.4 |
 | Avg.temp | 19.4 | 33.5 | 27.92| 1.9006 |
@@ -74,7 +74,7 @@ The table reveals the following characteristics:
 ### **3. Correlation Analysis:** 
 *Employing Spearman's correlation method to examine the relationships between variables.*
 
-| Variables  | Correlation Coefficient | p-value | 
+| Variable | Correlation Coefficient | p-value | 
 | ------ | --- | --- | 
 | Cases | 1.000 | - |
 | Avg.temp | 0.290* | 0.000 | 
@@ -110,8 +110,8 @@ and when examining the variance and autocorrelation within the variable itself, 
 - **Autocorrelation Examination in GLS Model:** ![pic12](acf-pacf_gls.jpg) From the figure, it is evident that the model has a p = 0 and a q = 0, indicating no significant autocorrelation. Additionally, the regression analysis table is obtained as follows.
 
 - **The Regression Coefficients Table Obtained from GLS Model:**
-| Variable           | Coefficient | Standard Error | T-Test Statistic | p-value |
-|--------------------|-------------|----------------|----------------|---------|
+| Variables | Coefficient | Standard Error | T-Test Statistic | p-value |
+| --------- | ----------- | -------------- | ---------------- | ------- |
 | (Intercept)        | -3.820116   | 5.185944       | -0.736629      | 0.4620  |
 | 2561               | -0.819349   | 0.594308       | -1.378661      | 0.1692  |
 | 2562               | -1.402175   | 0.462402       | -3.032375      | 0.0027  |

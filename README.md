@@ -29,7 +29,8 @@
 ## **Data Analysis and Statistics Used:**
 *The data was processed using the R programming language. The data analysis involved the application of the following statistical techniques:*
 
-### **1. Data Visualization:** Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.
+### **1. Data Visualization:** 
+*Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.*
 
 #### Example :
 - **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)** ![pic1](graph_pic/pic1.jpg)
@@ -50,22 +51,29 @@ The graph demonstrates a positive correlation between the number of dengue fever
 
 - **For additional R code, please refer to the following GitHub repository:** [graph_code.R](https://github.com/rungsini/rungsini-portfolio/blob/f83c734c54f87be5800fa53964aefb2d838cc98e/graph_code.R)
 
-### **2. Descriptive Analysis:** Describing the characteristics of the independent variables, which included average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable was the number of cases of dengue hemorrhagic fever.
+### **2. Descriptive Analysis:** 
+*Describing the characteristics of the independent variables, which included average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable was the number of cases of dengue hemorrhagic fever.*
+
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
+### **3. Correlation Analysis:** 
+*Employing Spearman's correlation method to examine the relationships between variables.*
 
 ![pic1](dv-2024.png)
 
-### **3. Correlation Analysis:** Employing Spearman's correlation method to examine the relationships between variables.
-
-![pic1](dv-2024.png)
-
-### **4. Regression Analysis:** Analyzing the relationships between the average temperature, rainfall amount, population size, area size, number of hospitals, and the number of cases of dengue hemorrhagic fever. *The Generalized Least Squares* method, a commonly used regression technique, was employed to develop a model for predicting the number of dengue hemorrhagic fever cases.
+### **4. Regression Analysis:** 
+*Analyzing the relationships between the average temperature, rainfall amount, population size, area size, number of hospitals, and the number of cases of dengue hemorrhagic fever. **The Generalized Least Squares** method, a commonly used regression technique, was employed to develop a model for predicting the number of dengue hemorrhagic fever cases.*
 
 #### Example : Model for the number of dengue fever patients in the central region.
-- **Multiple Linear Regression Model:**
-Number of DHF (Cases) ~ Year + Month + Average Temperature + Rainfall Amount + Population Size + Area + Number of Hospitals
+- **Multiple Linear Regression Model:** Number of DHF (Cases) ~ Year + Month + Average Temperature + Rainfall Amount + Population Size + Area + Number of Hospitals
 
-- ตรวจสอบข้อตกลงเบื้องต้น : ![pic1](dv-2024.png)
-- ตรวจสอบสหสัมพันธ์ในตัวเองของตัวแปร : ![pic1](dv-2024.png)
+- **Examine the preliminary assumptions of multiple linear regression:** ![pic1](dv-2024.png)
+
+- **Examine the intercorrelations among the variables:** ![pic1](dv-2024.png)
+
 - ARMA Model : ![pic1](dv-2024.png)
 - GLS Model : รูท จำนวนผู้ป่วยโรคไข้เลือดออก ~ ปี + เดือน + อุณหภูมิอากาศเฉลี่ย + ปริมาณน้ำฝน + จำนวนประชากร^2 + ขนาดพื้นที่ + จำนวนโรงพยาบาล
 - ตรวจสอบความแปรปรวนของ GLS Model : ![pic1](dv-2024.png)

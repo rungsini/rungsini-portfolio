@@ -54,19 +54,26 @@ The graph demonstrates a positive correlation between the number of dengue fever
 ### **2. Descriptive Analysis:** 
 *Describing the characteristics of the independent variables, which included average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable was the number of cases of dengue hemorrhagic fever.*
 
-| Syntax | Min | Max | Mean | S.D. |
+| Variables | Min | Max | Mean | S.D. |
 | ------ | --- | --- | --- | --- |
 | Cases | 0 | 1,709 | 64.22| 139.4 |
 | Avg.temp | 19.4 | 33.5 | 27.92| 1.9006 |
-| Avg.temp | 19.4 | 33.5 | 27.92| 1.9006 |
-| Avg.temp | 19.4 | 33.5 | 27.92| 1.9006 |
-| Avg.temp | 19.4 | 33.5 | 27.92| 1.9006 |
-| Avg.temp | 19.4 | 33.5 | 27.92| 1.9006 |
+| Rainfall | 6 | 1,772.70 | 148.8| 170.3908 |
+| Population | 177,338 | 5,686,646 | 957,267| 831,763.20 |
+| Area | 543 | 20,494 | 8,209| 4,702.68 |
+| No. of Hospital | 6 | 138 | 19.38| 19.0732 |
 
 ### **3. Correlation Analysis:** 
 *Employing Spearman's correlation method to examine the relationships between variables.*
 
-![pic1](dv-2024.png)
+| Variables  | Correlation Coefficient | p | 
+| ------ | --- | --- | 
+| Cases | 1.000 | - |
+| Avg.temp | 0.290* | 0.000 | 
+| Rainfall | 0.134* | 0.000 | 
+| Population | 0.418* | 0.000 | 
+| Area | 0.100* | 0.000 | 
+| No. of Hospital | 0.382* | 0.000 | 
 
 ### **4. Regression Analysis:** 
 *Analyzing the relationships between the average temperature, rainfall amount, population size, area size, number of hospitals, and the number of cases of dengue hemorrhagic fever. **The Generalized Least Squares** method, a commonly used regression technique, was employed to develop a model for predicting the number of dengue hemorrhagic fever cases.*

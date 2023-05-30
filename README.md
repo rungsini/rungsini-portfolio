@@ -127,12 +127,13 @@ and when examining the variance and autocorrelation within the variable itself, 
 | Oct                | -0.035020   | 0.211972       | -0.165211      | 0.8689  |
 | Nov                | -0.210175   | 0.183035       | -1.148278      | 0.2520  |
 | Dec                | 0.156560    | 0.163766       | 0.955998       | 0.3400  |
-| Avg.Temp      | 0.265764    | 0.152322       | 1.744754       | **0.0823**  |
-| Rainfall         | 0.001560    | 0.001064       | 1.466362       | **0.1438**  |
-| Population       | -0.000011   | 0.000007       | -1.655837      | **0.0990**  |
+| Avg.Temp           | 0.265764    | 0.152322       | 1.744754       | **0.0823**  |
+| Rainfall           | 0.001560    | 0.001064       | 1.466362       | **0.1438**  |
+| Population         | -0.000011   | 0.000007       | -1.655837      | **0.0990**  |
 | Population^2^      | 0.000000    | 0.000000       | 1.048774       | **0.2953**  |
-| Area           | 0.000602    | 0.000205       | 2.942650       | 0.0036  |
-| No. of Hospital  | 0.316682    | 0.140885       | 2.247801       | 0.0255  |
+| Area               | 0.000602    | 0.000205       | 2.942650       | 0.0036  |
+| No. of Hospital    | 0.316682    | 0.140885       | 2.247801       | 0.0255  |
+
 From Table, the p-values for average temperature, rainfall amount, population, and population squared are 0.0823, 0.1438, 0.0990, and 0.2953, respectively. These factors are not statistically significant at the 0.05 level and do not affect the number of dengue fever cases. Therefore, they are excluded from the model, resulting in the optimal model for the number of dengue fever cases in the central region as...
 
 - GLS Model ที่ปรับปรุงแล้วในภาคกลาง : รูท จำนวนผู้ป่วยโรคไข้เลือดออก ~ ปี + เดือน + ขนาดพื้นที่ + จำนวนโรงพยาบาล

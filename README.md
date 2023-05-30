@@ -134,6 +134,30 @@ and when examining the variance and autocorrelation within the variable itself, 
 | Area               | 0.000602    | 0.000205       | 2.942650       | 0.0036  |
 | No. of Hospital    | 0.316682    | 0.140885       | 2.247801       | 0.0255  |
 
+| Variables      | Coefficient | Standard Error | T-Test Statistic | p-value |
+| -------------- | ----------- | -------------- | ---------------- | ------- |
+| (Intercept)    | -3.820116   | 5.185944       | -0.736629        | 0.4620  |
+| 2561           | -0.819349   | 0.594308       | -1.378661        | 0.1692  |
+| 2562           | -1.402175   | 0.462402       | -3.032375        | 0.0027  |
+| 2563           | -0.475562   | 0.349215       | -1.361804        | 0.1745  |
+| Feb            | -0.172045   | 0.137995       | -1.246745        | 0.2137  |
+| Mar            | 1.045374    | 0.615364       | 1.698790         | 0.0906  |
+| Apr            | -3.482190   | 0.799438       | -4.355799        | 0.0000  |
+| May            | -1.159636   | 0.704213       | -1.646713        | 0.1009  |
+| Jun            | 2.597360    | 0.462181       | 5.619790         | 0.0000  |
+| Jul            | -0.531709   | 0.467026       | -1.138500        | 0.2560  |
+| Aug            | -1.176431   | 0.339141       | -3.468857        | 0.0006  |
+| Sep            | 1.052470    | 0.256250       | 4.107206         | 0.0001  |
+| Oct            | -0.035020   | 0.211972       | -0.165211        | 0.8689  |
+| Nov            | -0.210175   | 0.183035       | -1.148278        | 0.2520  |
+| Dec            | 0.156560    | 0.163766       | 0.955998         | 0.3400  |
+| Avg.Temp       | 0.265764    | 0.152322       | 1.744754         | 0.0823  |
+| Rainfall       | 0.001560    | 0.001064       | 1.466362         | 0.1438  |
+| Population     | -0.000011   | 0.000007       | -1.655837        | 0.0990  |
+| Population^2^  | 0.000000    | 0.000000       | 1.048774         | 0.2953  |
+| Area           | 0.000602    | 0.000205       | 2.942650         | 0.0036  |
+| No. of Hospital| 0.316682    | 0.140885       | 2.247801         | 0.0255  |
+
 From Table, the p-values for average temperature, rainfall amount, population, and population squared are 0.0823, 0.1438, 0.0990, and 0.2953, respectively. These factors are not statistically significant at the 0.05 level and do not affect the number of dengue fever cases. Therefore, they are excluded from the model, resulting in the optimal model for the number of dengue fever cases in the central region as...
 
 - GLS Model ที่ปรับปรุงแล้วในภาคกลาง : รูท จำนวนผู้ป่วยโรคไข้เลือดออก ~ ปี + เดือน + ขนาดพื้นที่ + จำนวนโรงพยาบาล

@@ -54,8 +54,8 @@ The graph demonstrates a positive correlation between the number of dengue fever
 ### **2. Descriptive Analysis:** 
 *Describing the characteristics of the independent variables, which included average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable was the number of cases of dengue hemorrhagic fever.*
 
-|  | Min | Max | Mean | S.D. |
-| ----------- | ----------- |
+| Syntax | Min | Max | Mean | S.D. |
+| ------ | --- | --- | --- | --- |
 | Cases | 0 | 1,709 | 64.22| 139.4 |
 | Avg.temp | 19.4 | 33.5 | 27.92| 1.9006 |
 | Avg.temp | 19.4 | 33.5 | 27.92| 1.9006 |

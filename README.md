@@ -63,6 +63,14 @@ The graph demonstrates a positive correlation between the number of dengue fever
 | Area | 543 | 20,494 | 8,209| 4,702.68 |
 | No. of Hospital | 6 | 138 | 19.38| 19.0732 |
 
+The table reveals the following characteristics:
+-Number of patients: Min = 0, Max = 1,709, Average = 64.22 (right-skewed)
+-Average temperature: Min = 19.4°C, Max = 33.5°C, Average = 27.92°C (relatively symmetrical)
+-Rainfall amount: Min = 6 mm, Max = 1,772.70 mm, Average = 148.8 mm (right-skewed)
+-Population size: Min = 177,338, Max = 5,686,646, Average = 957,267 (right-skewed)
+-Area size: Min = 543 sq km, Max = 20,494 sq km, Average = 8,209 sq km (moderately right-skewed)
+-Number of hospitals: Min = 6, Max = 138, Average = 19.38 (right-skewed)
+
 ### **3. Correlation Analysis:** 
 *Employing Spearman's correlation method to examine the relationships between variables.*
 
@@ -74,6 +82,9 @@ The graph demonstrates a positive correlation between the number of dengue fever
 | Population | 0.418* | 0.000 | 
 | Area | 0.100* | 0.000 | 
 | No. of Hospital | 0.382* | 0.000 | 
+*The statistical significance level at 0.05.
+
+From Table, which the correlation coefficients for average temperature, rainfall amount, population size, area size, and number of hospitals are 0.290, 0.134, 0.418, 0.100, and 0.382, respectively. All factors have a p-value of 0.000, indicating a significant correlation with the number of dengue hemorrhagic fever cases. Therefore, these factors will be used to develop a suitable model.
 
 ### **4. Regression Analysis:** 
 *Analyzing the relationships between the average temperature, rainfall amount, population size, area size, number of hospitals, and the number of cases of dengue hemorrhagic fever. **The Generalized Least Squares** method, a commonly used regression technique, was employed to develop a model for predicting the number of dengue hemorrhagic fever cases.*
@@ -81,12 +92,18 @@ The graph demonstrates a positive correlation between the number of dengue fever
 #### Example : Model for the number of dengue fever patients in the central region.
 - **Multiple Linear Regression Model:** Number of DHF (Cases) ~ Year + Month + Average Temperature + Rainfall Amount + Population Size + Area + Number of Hospitals
 
-- **Examine the preliminary assumptions of multiple linear regression:** ![pic1](dv-2024.png)
+- **Examine the preliminary assumptions of multiple linear regression:** ![pic1](ที่ม4รูป.png)
+From the graph, it can be observed that the residuals do not meet the assumption of randomness and show a pattern. The Normal Q-Q plot indicates that the data is not significantly deviating from normal distribution. Most of the data points used for analysis are not outliers.
 
-- **Examine the intercorrelations among the variables:** ![pic1](dv-2024.png)
+- **Examine the intercorrelations among the variables:** 
+Upon examining the autocorrelation function (ACF) and partial autocorrelation function (PACF) plots, the following patterns can be observed. ![pic1](dv-2024.png)
+From the figure, it is evident that the model has a p = 2 and a q = 2, which can be represented by the following equation
 
-- ARMA Model : ![pic1](dv-2024.png)
-- GLS Model : รูท จำนวนผู้ป่วยโรคไข้เลือดออก ~ ปี + เดือน + อุณหภูมิอากาศเฉลี่ย + ปริมาณน้ำฝน + จำนวนประชากร^2 + ขนาดพื้นที่ + จำนวนโรงพยาบาล
+- **Autoregressive Moving Average (ARMA):** ![pic1](สมการ amar.png)
+The analysis reveals autocorrelation in the residuals, indicating a lack of independence. Additionally, there are issues of non-constant variance. To address these problems, the data was analyzed using the generalized least squares method. The resulting model is as follows.
+
+- **Generalized Least Squares (GLS):** &radic;Number of DHF (Cases) ~ Year + Month + Average Temperature + Rainfall Amount + Population Size^2^ + Area + Number of Hospitals
+
 - ตรวจสอบความแปรปรวนของ GLS Model : ![pic1](dv-2024.png)
 - ตรวจสอบสหสัมพันธ์ในตัวเองของตัวแปรของ GLS Model : ![pic1](dv-2024.png)
 - ตารางสปสการถดถอยที่ได้จาก GLS Model ภาคกลาง : ![pic1](dv-2024.png)

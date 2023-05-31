@@ -64,12 +64,12 @@ The graph demonstrates a positive correlation between the number of dengue fever
 | No. of Hospital | 6       | 138       | 19.38  | 19.0732    |
 
 The table reveals the following characteristics:
--Number of patients: Min = 0, Max = 1,709, Average = 64.22 (right-skewed)
--Average temperature: Min = 19.4°C, Max = 33.5°C, Average = 27.92°C (relatively symmetrical)
--Rainfall amount: Min = 6 mm, Max = 1,772.70 mm, Average = 148.8 mm (right-skewed)
--Population size: Min = 177,338, Max = 5,686,646, Average = 957,267 (right-skewed)
--Area size: Min = 543 sq km, Max = 20,494 sq km, Average = 8,209 sq km (moderately right-skewed)
--Number of hospitals: Min = 6, Max = 138, Average = 19.38 (right-skewed)
+- Number of patients: Min = 0, Max = 1,709, Average = 64.22 (right-skewed)
+- Average temperature: Min = 19.4°C, Max = 33.5°C, Average = 27.92°C (relatively symmetrical)
+- Rainfall amount: Min = 6 mm, Max = 1,772.70 mm, Average = 148.8 mm (right-skewed)
+- Population size: Min = 177,338, Max = 5,686,646, Average = 957,267 (right-skewed)
+- Area size: Min = 543 sq km, Max = 20,494 sq km, Average = 8,209 sq km (moderately right-skewed)
+- Number of hospitals: Min = 6, Max = 138, Average = 19.38 (right-skewed)
 
 ### **3. Correlation Analysis:** 
 *Employing Spearman's correlation method to examine the relationships between variables.*
@@ -111,7 +111,7 @@ and when examining the variance and autocorrelation within the variable itself, 
 
 - **The Regression Coefficients Table Obtained from GLS Model:**
 
-| Variables      | Coefficient | Standard Error | T-Test Statistic | p-value |
+| Variable       | Coefficient | Standard Error | t-value          | p-value |
 | -------------- | ----------- | -------------- | ---------------- | ------- |
 | (Intercept)    | -3.820116   | 5.185944       | -0.736629        | 0.4620  |
 | 2561           | -0.819349   | 0.594308       | -1.378661        | 0.1692  |
@@ -139,11 +139,39 @@ From Table, the p-values for average temperature, rainfall amount, population, a
 
 - **Adjusted GLS Model in Central Region:** *&radic;Number of DHF (Cases) ~ Year + Month + Area + Number of Hospitals* and when examining the variance and autocorrelation within the variable itself, the following patterns are observed
 
-- **Variance Assessment of Adjusted GLS Model:** ![pic13](adj_var_gls.jpg) ยังไม่ได้แปล
+- **Variance Assessment of Adjusted GLS Model:** ![pic13](adj_var_gls.jpg) The graph shows a plot of residuals against estimated values. The distribution is randomly scattered around the zero axis, without a clear pattern. This indicates constant variability, suggesting a constant variance.
 
-- **Autocorrelation Examination in Adjusted GLS Model:** ![pic14](acf-pacf_adj_gls.jpg) ยังไม่ได้แปล
+- **Autocorrelation Examination in Adjusted GLS Model:** ![pic14](acf-pacf_adj_gls.jpg) Based on the observed graph, it can be concluded that there is no autocorrelation present. This implies that the residuals exhibit independence, indicating a lack of correlation between consecutive data points.
 
-- Histogram ของส่วนเหลือในภาคกลาง : ![pic1](dv-2024.png)
-- ตารางสปสการถดถอยที่ได้จาก GLS Model ที่ปรับปรุงแล้วในภาคกลาง : ![pic1](dv-2024.png)
-- ตัวแบบที่เหมาะสมสำหรับจำนวนผู้ป่วยโรคไข้เลือดออกในภาคกลาง : ![pic1](dv-2024.png)
-- ตัวอย่างการใช้ตัวแบบ : ![pic1](dv-2024.png)
+- **Histogram of residuals in the central region:** ![pic1](hist_adj_gls.jpg) Based on the graph, it is evident that the residuals follow an approximately normal distribution, resembling a normal distribution. This indicates that the adjusted model is well-suited for this dataset. Upon analysis, the regression analysis table is obtained as presented below.
+
+- **The Regression Coefficients Table Obtained from Adjusted GLS Model:**
+
+| Variable        | Coefficient | Standard Error | t-value   | p-value |
+|-----------------|-------------|----------------|-----------|---------|
+| (Intercept)     | 1.246239    | 1.2833433      | 0.971088  | 0.3324  |
+| 2561            | -0.611631   | 0.5793777      | -1.055669 | 0.2921  |
+| 2562            | -1.512549   | 0.4607218      | -3.282998 | 0.0012  |
+| 2563            | -0.272062   | 0.3325581      | -0.818088 | 0.4141  |
+| Feb             | -0.163333   | 0.1388104      | -1.176661 | 0.2404  |
+| Mar             | 0.450990    | 0.4823958      | 0.934895  | 0.3507  |
+| Apr             | -4.406418   | 0.6430366      | -6.852516 | 0.0000  |
+| May             | -0.529713   | 0.5946856      | -0.890745 | 0.3739  |
+| Jun             | 2.287857    | 0.4164362      | 5.493896  | 0.0000  |
+| Jul             | -0.005708   | 0.3659854      | -0.015595 | 0.9876  |
+| Aug             | -0.881540   | 0.2895860      | -3.044138 | 0.0026  |
+| Sep             | 1.042274    | 0.2543669      | 4.097522  | 0.0001  |
+| Oct             | -0.120981   | 0.2117574      | -0.571319 | 0.5683  |
+| Nov             | -0.152349   | 0.1821371      | -0.836452 | 0.4037  |
+| Dec             | 0.104366    | 0.1641569      | 0.635770  | 0.5255  |
+| Area            | 0.000310    | 0.0001361      | 2.277237  | 0.0236  |
+| No. of Hospital | 0.100957    | 0.0278067      | 3.630665  | 0.0003  |
+
+From the table, it can be observed that if other factors remain constant, an increase in area by 1 square kilometer will result in an increase of 0.000310 √people in the number of patients. Similarly, an increase in the number of hospitals by 1 will lead to an increase of 0.100957 √people in the number of patients. Additionally, if we want to predict the number of patients in March, it will increase from January of the year 2560 (intercept) by 0.450990 √people. Based on this table, a suitable model can be constructed.
+
+- **Appropriate Model for the Number of Dengue Hemorrhagic Fever Cases in Central Regions of Thailand:** √Ŷ = 1.246239 - 0.611631 * "D<sub>1<sub>" - 1.512549 * "D<sub>2<sub>" - 0.272062 * "D<sub>3<sub>" - 0.163333 * "M<sub>1<sub>" + 0.450990 * "M<sub>2<sub>" 
+          - 4.406418 * "M<sub>3<sub>" - 0.529713 * "M<sub>4<sub>" + 2.287857 * "M<sub>5<sub>" - 0.005708 * "M<sub>6<sub>" - 0.881540 * "M<sub>7<sub>"
+          + 1.042274 * "M<sub>8<sub>" - 0.120981 * "M<sub>9<sub>" - 0.152349 * "M<sub>10<sub>" + 0.104366 * "M<sub>11<sub>"
+          + 0.000310 * "X<sub>Area<sub>" + 0.100957 * "X<sub>No. of Hospital<sub>"
+
+- **Example of Model Usage:** If we want to forecast the number of patients with Dengue Hemorrhagic Fever in June, 2561, with an area size of "1,568.737" square kilometers and 138 hospitals, the equation would be as follows:

@@ -175,4 +175,6 @@ From the table, it can be observed that if other factors remain constant, an inc
 
 `√Ŷ = 1.246239 - 0.6116317(1) + 2.287857(1) + 0.000310(1,568.737) + 0.100957(138)`
 
-Therefore, the estimated number of Dengue Hemorrhagic Fever patients in the central region provinces is approximately equal to "Ŷ" = "17.3408"² = 300.7047 ≈ **301 individuals**.
+Therefore, the estimated number of Dengue Hemorrhagic Fever patients in the central region provinces is approximately equal to `Ŷ = "17.3408"²` = `300.7047` ≈ `301 individuals`.
+
+- **For additional R code, please refer to the following GitHub repository:** [graph_code.R](https://github.com/rungsini/rungsini-portfolio/blob/f83c734c54f87be5800fa53964aefb2d838cc98e/graph_code.R)

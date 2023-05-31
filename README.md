@@ -1,36 +1,36 @@
 # [Project 1: Models for the number of cases with Dengue Hemorrhagic Fever]
 
-## This project, conducted as part of my bachelor's research paper, aimed to achieve the following objectives:
-- To examine appropriate models for estimating the prevalence of Dengue Hemorrhagic Fever (DHF) among patients in different regions of Thailand.
-- To explore the factors associated with the incidence of Dengue Hemorrhagic Fever (DHF).
-- To present the findings using visually engaging and informative graphs.
+## **Study objectives:**
+- Evaluate models for estimating the prevalence of Dengue Hemorrhagic Fever (DHF) in different regions of Thailand.
+- Investigate factors associated with the incidence of Dengue Hemorrhagic Fever (DHF).
+- Present findings using visually appealing and informative graphs.
 
 ## **Data Sources:**
-*This project is a retrospective descriptive study, conducted through a review of historical data.*
-- The dengue cases were obtained from the Disease Control Office (No. 506) of the Department of Disease Control, comprising a total of 140,256 individuals.
-- Population data was sourced from the National Statistical Office.
-- Geographical information was obtained from the Energy Conservation in the Public Sector project.
-- Hospital data was provided by the Ministry of Public Health.
-- Average temperature and rainfall data were collected from the Meteorological Department.
+*This project is a retrospective descriptive study using historical data.*
+- Dengue cases obtained from Disease Control Office (No. 506) of the Department of Disease Control, comprising 140,256 individuals.
+- Population data sourced from National Statistical Office.
+- Geographical information obtained from Energy Conservation in the Public Sector project.
+- Hospital data provided by Ministry of Public Health.
+- Average temperature and rainfall data collected from Meteorological Department.
 
 ## **Study Details:**
-- The study population consisted of dengue cases reported in each province of Thailand from January 2017 to June 2020.
-- The study period spanned 42 months or 3 years and 6 months, starting from January 2560 to June 2563.
+- Analyze reported Dengue Hemorrhagic Fever cases in each province of Thailand from January 2017 to June 2020.
+- Study period: 42 months or 3 years and 6 months, from January 2560 to June 2563.
 - Variables studied: Province, Region, Year, Month, Average Temperature, Rainfall Amount, Population Size, Area, Number of Hospitals.
-- The study investigated the number of cases of Dengue Hemorrhagic Fever in the Central, Eastern, Western, and Southern regions of Thailand, utilizing data from all 52 provinces in the country.
+- Investigate number of Dengue Hemorrhagic Fever cases in Central, Eastern, Western, and Southern regions of Thailand using data from all 52 provinces.
 
 ## **Data Cleaning:**
-*Data was collected from various sources and compiled in Excel for preparation in SPSS for the subsequent cleaning process.*
-- Importing the Data: The secondary data collected from various sources is imported into SPSS.
-- Data Inspection: The imported data undergoes a visual inspection to identify any inconsistencies, missing values, or formatting issues.
-- Handling Missing Values: Missing values are handled by examining the extent and patterns of missingness. Depending on the situation, they can be deleted, imputed using appropriate methods, or treated as a separate category.
-- Dealing with Outliers: Outliers, which are extreme values deviating significantly from the rest of the data, are identified and appropriately addressed. They can be removed, recoded, or analyzed separately.
+*Data collected from various sources compiled in Excel and prepared in SPSS for cleaning process.*
+- Import data into SPSS from secondary sources.
+- Inspect imported data visually for inconsistencies, missing values, and formatting issues.
+- Handle missing values by assessing extent and patterns and applying appropriate methods such as deletion, imputation, or separate categorization.
+- Identify and address outliers, extreme values deviating significantly from the rest of the data.
 
 ## **Data Analysis and Statistics Used:**
-*The data was processed using the R programming language. The data analysis involved the application of the following statistical techniques:*
+*Process data using R programming language and apply statistical techniques including:*
 
 ### **1. Data Visualization:** 
-*Creating informative graphs to illustrate the patterns and relationships of the variables more clearly.*
+*Create informative graphs to illustrate variable patterns and relationships.*
 
 #### Example :
 - **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)** ![pic1](graph_pic/pic1.jpg)
@@ -39,25 +39,25 @@
 
 ![pic2](graph_pic/pic2.jpg) 
 
-The Spaghetti Plot, depicting the number of dengue fever patients each year categorized by region, reveals a similar pattern across all regions. In each year, the number of patients tends to increase. There is a peak point during the rainy season of each year where the number of patients reaches its highest. Additionally, the data suggests a seasonal cyclicality.
+The Spaghetti Plot shows the number of dengue fever patients each year by region, revealing a consistent pattern and peak during the rainy season. Seasonal cyclicality is observed.
 
 - **Y-axis: Number of DHF (Cases) and X-axis: Average Temperature (°C)** 
 
 ![pic3](graph_pic/pic3.jpg) 
 
-The Scatter Plot shows the relationship between dengue fever cases and average temperature. It reveals a concentration of cases within the 28-32 degrees Celsius temperature range. However, caution is warranted due to potential data collection inconsistencies and Thailand's consistently warm climate, which ranges from 28-35 degrees Celsius on average. Therefore, definitive conclusions about data accuracy cannot be drawn from this graph alone.
+The Scatter Plot indicates a concentration of dengue fever cases within the 28-32 degrees Celsius temperature range. However, caution is warranted due to potential data collection inconsistencies and Thailand's consistently warm climate, which ranges from 28-35 degrees Celsius on average. Therefore, definitive conclusions about data accuracy cannot be drawn from this graph alone.
 
 - **Y-axis: Number of DHF (Cases) and X-axis: Rainfall Amount (Millimeters)** 
 
 ![pic4](graph_pic/pic4.jpg)
 
-From the Scatter Plot, which displays the number of patients with dengue fever and the rainfall quantity, it can be observed that the graph line tends to increase and extend horizontally. Generally, a higher number of patients are observed in the range of 0-500 millimeters of rainfall. However, it is still difficult to draw significant conclusions from the data.
+The Scatter Plot represents the number of patients with dengue fever and the amount of rainfall. Higher numbers of patients are observed in the 0-500 millimeters rainfall range, but further analysis is needed.
 
 - **Y-axis: Number of DHF (Cases) and X-axis: Population Size (Individuals)** 
 
 ![pic5](graph_pic/pic5.jpg) 
 
-The graph demonstrates a positive correlation between the number of dengue fever patients and the population count. As the population increases in each province, there is a clear trend of the number of patients also increasing.
+The graph shows a positive correlation between the number of dengue fever patients and population size. As population increases, the number of patients also rises.
 
 - **Y-axis: Number of DHF (Cases) and X-axis: Area (Square Kilometers)** 
 
@@ -73,7 +73,7 @@ The scatter plot clearly shows a noticeable trend between the number of dengue f
 - **For additional R code, please refer to the following GitHub repository:** [graph_code.R](https://github.com/rungsini/rungsini-portfolio/blob/f83c734c54f87be5800fa53964aefb2d838cc98e/graph_code.R)
 
 ### **2. Descriptive Analysis:** 
-*Describing the characteristics of the independent variables, which included average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable was the number of cases of dengue hemorrhagic fever.*
+*Describing the characteristics of the independent variables, including average temperature, rainfall amount, population size, area size, and the number of hospitals. The dependent variable is the number of cases of dengue hemorrhagic fever.*
 
 | Variable        | Min     | Max       | Mean   | S.D.       |
 | --------------- | ------- | --------- | ------ | ---------- |
@@ -84,13 +84,13 @@ The scatter plot clearly shows a noticeable trend between the number of dengue f
 | Area            | 543     | 20,494    | 8,209  | 4,702.68   |
 | No. of Hospital | 6       | 138       | 19.38  | 19.0732    |
 
-The table reveals the following characteristics:
-- Number of patients: Min = 0, Max = 1,709, Average = 64.22 (right-skewed)
-- Average temperature: Min = 19.4°C, Max = 33.5°C, Average = 27.92°C (relatively symmetrical)
-- Rainfall amount: Min = 6 mm, Max = 1,772.70 mm, Average = 148.8 mm (right-skewed)
-- Population size: Min = 177,338, Max = 5,686,646, Average = 957,267 (right-skewed)
-- Area size: Min = 543 sq km, Max = 20,494 sq km, Average = 8,209 sq km (moderately right-skewed)
-- Number of hospitals: Min = 6, Max = 138, Average = 19.38 (right-skewed)
+The table presents the following characteristics:
+- Number of patients: Min = 0, Max = 1,709, Mean = 64.22 (right-skewed)
+- Average temperature: Min = 19.4°C, Max = 33.5°C, Mean = 27.92°C (relatively symmetrical)
+- Rainfall amount: Min = 6 mm, Max = 1,772.70 mm, Mean = 148.8 mm (right-skewed)
+- Population size: Min = 177,338, Max = 5,686,646, Mean = 957,267 (right-skewed)
+- Area size: Min = 543 sq km, Max = 20,494 sq km, Mean = 8,209 sq km (moderately right-skewed)
+- Number of hospitals: Min = 6, Max = 138, Mean = 19.38 (right-skewed)
 
 ### **3. Correlation Analysis:** 
 *Employing Spearman's correlation method to examine the relationships between variables.*
@@ -103,23 +103,27 @@ The table reveals the following characteristics:
 | Population      | 0.418*                  | 0.000   | 
 | Area            | 0.100*                  | 0.000   | 
 | No. of Hospital | 0.382*                  | 0.000   | 
-*The statistical significance level at 0.05.
 
-From Table, which the correlation coefficients for average temperature, rainfall amount, population size, area size, and number of hospitals are 0.290, 0.134, 0.418, 0.100, and 0.382, respectively. All factors have a p-value of 0.000, indicating a significant correlation with the number of dengue hemorrhagic fever cases. Therefore, these factors will be used to develop a suitable model.
+*Statistical significance level: 0.05.
+
+From Table, which the correlation coefficients for average temperature, rainfall amount, population size, area size, and number of hospitals are 0.290, 0.134, 0.418, 0.100, and 0.382, respectively. All factors have a p-value of 0.000, indicating a significant correlation with the number of dengue hemorrhagic fever cases. Therefore, these factors will be used to develop an appropriate model.
 
 ### **4. Regression Analysis:** 
-*Analyzing the relationships between the average temperature, rainfall amount, population size, area size, number of hospitals, and the number of cases of dengue hemorrhagic fever. **The Generalized Least Squares** method, a commonly used regression technique, was employed to develop a model for predicting the number of dengue hemorrhagic fever cases.*
+*Analyzing the relationships between the average temperature, rainfall amount, population size, area size, number of hospitals, and the number of cases of dengue hemorrhagic fever. **The Generalized Least Squares** method, a commonly used regression technique, to develop a predictive model for estimating the number of dengue hemorrhagic fever cases.*
 
-#### Example : Model for the number of dengue fever patients in the central region.
+#### Example: Model for the Number of Dengue Fever Patients in the Central Region.
 - **Multiple Linear Regression Model:** 
 
 `Number of DHF (Cases) ~ Year + Month + Average Temperature + Rainfall Amount + Population Size + Area + Number of Hospitals`
 
 - **Preliminary Examination:** ![pic8](preliminary_assumtions.jpg)
-From the graph, it can be observed that the residuals do not meet the assumption of randomness and show a pattern. The Normal Q-Q plot indicates that the data is not significantly deviating from normal distribution. Most of the data points used for analysis are not outliers.
+From the graph, it can be observed that the residuals do not meet the assumption of randomness and show a pattern. The Normal Q-Q plot indicates that the data is not significantly deviating from normal distribution. However, most of the data points used for analysis are not outliers.
 
 - **Autocorrelation Examination:** 
-Upon examining the autocorrelation function (ACF) and partial autocorrelation function (PACF) plots, the following patterns can be observed. ![pic9](acf-pacf.jpg)
+Upon examining the autocorrelation function (ACF) and partial autocorrelation function (PACF) plots, the following patterns can be observed. 
+
+![pic9](acf-pacf.jpg)
+
 From the figure, it is evident that the model has a p = 2 and a q = 2, which can be represented by the following equation
 
 - **Autoregressive Moving Average (ARMA(2,2)):** 
@@ -132,21 +136,24 @@ The analysis reveals autocorrelation in the residuals, indicating a lack of inde
 
 `√Number of DHF (Cases) ~ Year + Month + Average Temperature + Rainfall Amount + Population Size^2 + Area + Number of Hospitals`
 
-and when examining the variance and autocorrelation within the variable itself, the following patterns are observed
+The GLS method helps in accounting for the autocorrelation and heteroscedasticity in the data.
 
 - **Variance Assessment of GLS Model:** 
+To assess the variance of the GLS model, a scatter plot of residuals against predicted values was created.
 
 ![pic11](var_gls.jpg)
 
-The scatter plot of residuals against predicted values shows random dispersion around zero without any clear pattern, indicating constant variance (homoscedasticity).
+The plot shows random dispersion of residuals around zero without any clear pattern, indicating constant variance (homoscedasticity). This suggests that the GLS model adequately addresses the issue of non-constant variance in the data.
 
 - **Autocorrelation Examination in GLS Model:** 
+To examine the autocorrelation in the GLS model, the autocorrelation function (ACF) and partial autocorrelation function (PACF) plots were analyzed.
 
 ![pic12](acf-pacf_gls.jpg)
 
-From the figure, it is evident that the model has a p = 0 and a q = 0, indicating no significant autocorrelation. Additionally, the regression analysis table is obtained as follows.
+From the figure, it is evident that the model has a p = 0 and a q = 0, indicating no significant autocorrelation. This suggests that the residuals of the GLS model are independent.
 
 - **The Regression Coefficients Table Obtained from GLS Model:**
+The regression coefficients table provides information about the estimated coefficients, their standard errors, t-values, and p-values for each variable in the GLS model.
 
 | Variable       | Coefficient | Standard Error | t-value          | p-value |
 | -------------- | ----------- | -------------- | ---------------- | ------- |
@@ -172,13 +179,12 @@ From the figure, it is evident that the model has a p = 0 and a q = 0, indicatin
 | Area           | 0.000602    | 0.000205       | 2.942650         | 0.0036  |
 | No. of Hospital| 0.316682    | 0.140885       | 2.247801         | 0.0255  |
 
-From Table, the p-values for average temperature, rainfall amount, population, and population squared are 0.0823, 0.1438, 0.0990, and 0.2953, respectively. These factors are not statistically significant at the 0.05 level and do not affect the number of dengue fever cases. Therefore, they are excluded from the model, resulting in the optimal model for the number of dengue fever cases in the central region as...
+From the table, we can see the coefficients and their statistical significance for variables such as Year, Month, Area, Number of Hospitals, and other factors. The p-values indicate the significance of each variable in predicting the number of dengue fever cases.
 
 - **Adjusted GLS Model in Central Region:** 
+After analyzing the p-values of the variables in the GLS model, the factors of average temperature, rainfall amount, population, and population squared were found to be statistically insignificant (p > 0.05). Therefore, they were excluded from the model to obtain an adjusted GLS model for the number of dengue fever cases in the central region. The adjusted model includes variables Year, Month, Area, and Number of Hospitals.
 
 `√Number of DHF (Cases) ~ Year + Month + Area + Number of Hospitals` 
-
-and when examining the variance and autocorrelation within the variable itself, the following patterns are observed
 
 - **Variance Assessment of Adjusted GLS Model:** 
 
@@ -187,18 +193,20 @@ and when examining the variance and autocorrelation within the variable itself, 
 The graph shows a plot of residuals against estimated values. The distribution is randomly scattered around the zero axis, without a clear pattern. This indicates constant variability, suggesting a constant variance.
 
 - **Autocorrelation Examination in Adjusted GLS Model:** 
+To assess the variance of the adjusted GLS model, a scatter plot of residuals against estimated values was created. 
 
 ![pic14](acf-pacf_adj_gls.jpg)
 
-Based on the observed graph, it can be concluded that there is no autocorrelation present. This implies that the residuals exhibit independence, indicating a lack of correlation between consecutive data points.
+The plot shows random dispersion of residuals around the zero axis without any clear pattern, indicating constant variance (homoscedasticity). This suggests that the adjusted GLS model adequately addresses the issue of non-constant variance in the data.
 
 - **Histogram of residuals in the central region:** 
 
 ![pic1](hist_adj_gls.jpg)
 
-Based on the graph, it is evident that the residuals follow an approximately normal distribution, resembling a normal distribution. This indicates that the adjusted model is well-suited for this dataset. Upon analysis, the regression analysis table is obtained as presented below.
+Based on the graph, it is evident that the residuals approximately follow a normal distribution, resembling a bell-shaped curve. This suggests that the adjusted GLS model is a suitable fit for the dataset.
 
 - **The Regression Coefficients Table Obtained from Adjusted GLS Model:**
+The regression coefficients table provides information on the estimated coefficients, their standard errors, t-values, and p-values for each variable in the adjusted GLS model.
 
 | Variable        | Coefficient | Standard Error | t-value   | p-value |
 |-----------------|-------------|----------------|-----------|---------|
@@ -220,18 +228,20 @@ Based on the graph, it is evident that the residuals follow an approximately nor
 | Area            | 0.000310    | 0.0001361      | 2.277237  | 0.0236  |
 | No. of Hospital | 0.100957    | 0.0278067      | 3.630665  | 0.0003  |
 
-From the table, it can be observed that if other factors remain constant, an increase in area by 1 square kilometer will result in an increase of 0.000310 √people in the number of patients. Similarly, an increase in the number of hospitals by 1 will lead to an increase of 0.100957 √people in the number of patients. Additionally, if we want to predict the number of patients in March, it will increase from January of the year 2560 (intercept) by 0.450990 √people. Based on this table, a suitable model can be constructed.
+Based on the table, we can see the coefficients for each variable and their corresponding p-values. For example, an increase in the area by 1 square kilometer is associated with an increase of 0.000310 √people in the number of patients. Similarly, an increase in the number of hospitals by 1 is associated with an increase of 0.100957 √people in the number of patients.
 
 - **Appropriate Model for the Number of Dengue Hemorrhagic Fever Cases in Central Regions of Thailand:** 
 
+The appropriate model for the number of dengue hemorrhagic fever cases in the central region of Thailand is provided as an equation, incorporating the variables Year, Month, Area, and Number of Hospitals.
+
 `√Ŷ = 1.246239 - 0.611631*D1 - 1.512549*D2 - 0.272062*D3 - 0.163333*M1 + 0.450990*M2 - 4.406418*M3 - 0.529713*M4 + 2.287857*M5 - 0.005708*M6 - 0.881540*M7  + 1.042274*M8 - 0.120981*M9 - 0.152349*M10 + 0.104366*M11 + 0.000310*X_Area + 0.100957*X_No. of Hospital`
 
-- **Example of Model Usage:** If we want to forecast the number of patients with Dengue Hemorrhagic Fever in June, 2561, with an area size of 1,568.737 square kilometers and 138 hospitals, the equation would be as follows:
+- **Example of Model Usage:** To make use of the model, an example is given where the number of patients in June 2561 is forecasted, assuming an area size of 1,568.737 square kilometers and 138 hospitals, the equation would be as follows:
 
 `√Ŷ = 1.246239 - 0.6116317(1) + 2.287857(1) + 0.000310(1,568.737) + 0.100957(138)`
 
-Therefore, the estimated number of Dengue Hemorrhagic Fever patients in the central region provinces is approximately equal to 
-
 `Ŷ = "17.3408"²` = `300.7047` ≈ `301 individuals`
 
-- **For additional R code, please refer to the following GitHub repository:** [model_code.R](https://github.com/rungsini/rungsini-portfolio/blob/d27804ded75a89b8d5b13e542b8d01439916d6bb/model_code.R)
+By substituting the values into the equation, an estimated number of 301 individuals is obtained.
+
+- **For additional R code related to this analysis, you can refer to the following GitHub repository:** [model_code.R](https://github.com/rungsini/rungsini-portfolio/blob/d27804ded75a89b8d5b13e542b8d01439916d6bb/model_code.R)

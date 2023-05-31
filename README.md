@@ -244,4 +244,4 @@ The appropriate model for the number of dengue hemorrhagic fever cases in the ce
 
 By substituting the values into the equation, an estimated number of 301 individuals is obtained.
 
-- **For additional R code related to this analysis, you can refer to the following GitHub repository:** [model_code.R](https://github.com/rungsini/rungsini-portfolio/blob/d27804ded75a89b8d5b13e542b8d01439916d6bb/model_code.R)
+- **For additional R code related to this analysis, you can refer to the following GitHub repository:** [central-model_code.R](https://github.com/rungsini/rungsini-portfolio/blob/69cd7f321d966ea0e5b1de4649b3e9dddacf60a8/central-model_code.R)

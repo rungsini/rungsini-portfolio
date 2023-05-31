@@ -90,7 +90,7 @@ From Table, which the correlation coefficients for average temperature, rainfall
 *Analyzing the relationships between the average temperature, rainfall amount, population size, area size, number of hospitals, and the number of cases of dengue hemorrhagic fever. **The Generalized Least Squares** method, a commonly used regression technique, was employed to develop a model for predicting the number of dengue hemorrhagic fever cases.*
 
 #### Example : Model for the number of dengue fever patients in the central region.
-- **Multiple Linear Regression Model:** Number of DHF (Cases) ~ Year + Month + Average Temperature + Rainfall Amount + Population Size + Area + Number of Hospitals
+- **Multiple Linear Regression Model:** `Number of DHF (Cases) ~ Year + Month + Average Temperature + Rainfall Amount + Population Size + Area + Number of Hospitals`
 
 - **Preliminary Examination:** ![pic8](preliminary_assumtions.jpg)
 From the graph, it can be observed that the residuals do not meet the assumption of randomness and show a pattern. The Normal Q-Q plot indicates that the data is not significantly deviating from normal distribution. Most of the data points used for analysis are not outliers.
@@ -102,7 +102,7 @@ From the figure, it is evident that the model has a p = 2 and a q = 2, which can
 - **Autoregressive Moving Average (ARMA(2,2)):** ![pic10](amar(2,2).jpg)
 The analysis reveals autocorrelation in the residuals, indicating a lack of independence. Additionally, there are issues of non-constant variance. To address these problems, the data was analyzed using the generalized least squares method. The resulting model is as follows.
 
-- **Generalized Least Squares (GLS):** *&radic;Number of DHF (Cases) ~ Year + Month + Average Temperature + Rainfall Amount + Population Size^2^ + Area + Number of Hospitals*
+- **Generalized Least Squares (GLS):** `√Number of DHF (Cases) ~ Year + Month + Average Temperature + Rainfall Amount + Population Size^2 + Area + Number of Hospitals`
 and when examining the variance and autocorrelation within the variable itself, the following patterns are observed
 
 - **Variance Assessment of GLS Model:** ![pic11](var_gls.jpg) The scatter plot of residuals against predicted values shows random dispersion around zero without any clear pattern, indicating constant variance (homoscedasticity).
@@ -137,7 +137,7 @@ and when examining the variance and autocorrelation within the variable itself, 
 
 From Table, the p-values for average temperature, rainfall amount, population, and population squared are 0.0823, 0.1438, 0.0990, and 0.2953, respectively. These factors are not statistically significant at the 0.05 level and do not affect the number of dengue fever cases. Therefore, they are excluded from the model, resulting in the optimal model for the number of dengue fever cases in the central region as...
 
-- **Adjusted GLS Model in Central Region:** *&radic;Number of DHF (Cases) ~ Year + Month + Area + Number of Hospitals* and when examining the variance and autocorrelation within the variable itself, the following patterns are observed
+- **Adjusted GLS Model in Central Region:** `√Number of DHF (Cases) ~ Year + Month + Area + Number of Hospitals` and when examining the variance and autocorrelation within the variable itself, the following patterns are observed
 
 - **Variance Assessment of Adjusted GLS Model:** ![pic13](adj_var_gls.jpg) The graph shows a plot of residuals against estimated values. The distribution is randomly scattered around the zero axis, without a clear pattern. This indicates constant variability, suggesting a constant variance.
 
@@ -169,9 +169,10 @@ From Table, the p-values for average temperature, rainfall amount, population, a
 
 From the table, it can be observed that if other factors remain constant, an increase in area by 1 square kilometer will result in an increase of 0.000310 √people in the number of patients. Similarly, an increase in the number of hospitals by 1 will lead to an increase of 0.100957 √people in the number of patients. Additionally, if we want to predict the number of patients in March, it will increase from January of the year 2560 (intercept) by 0.450990 √people. Based on this table, a suitable model can be constructed.
 
-- **Appropriate Model for the Number of Dengue Hemorrhagic Fever Cases in Central Regions of Thailand:** √Ŷ = 1.246239 - 0.611631 * "D<sub>1<sub>" - 1.512549 * "D<sub>2<sub>" - 0.272062 * "D<sub>3<sub>" - 0.163333 * "M<sub>1<sub>" + 0.450990 * "M<sub>2<sub>" 
-          - 4.406418 * "M<sub>3<sub>" - 0.529713 * "M<sub>4<sub>" + 2.287857 * "M<sub>5<sub>" - 0.005708 * "M<sub>6<sub>" - 0.881540 * "M<sub>7<sub>"
-          + 1.042274 * "M<sub>8<sub>" - 0.120981 * "M<sub>9<sub>" - 0.152349 * "M<sub>10<sub>" + 0.104366 * "M<sub>11<sub>"
-          + 0.000310 * "X<sub>Area<sub>" + 0.100957 * "X<sub>No. of Hospital<sub>"
+- **Appropriate Model for the Number of Dengue Hemorrhagic Fever Cases in Central Regions of Thailand:** `√Ŷ = 1.246239 - 0.611631*D1 - 1.512549*D2 - 0.272062*D3 - 0.163333*M1 + 0.450990*M2 - 4.406418*M3 - 0.529713*M4 + 2.287857*M5 - 0.005708*M6 - 0.881540*M7  + 1.042274*M8 - 0.120981*M9 - 0.152349*M10 + 0.104366*M11 + 0.000310*X_Area + 0.100957*X_No. of Hospital`
 
-- **Example of Model Usage:** If we want to forecast the number of patients with Dengue Hemorrhagic Fever in June, 2561, with an area size of "1,568.737" square kilometers and 138 hospitals, the equation would be as follows:
+- **Example of Model Usage:** If we want to forecast the number of patients with Dengue Hemorrhagic Fever in June, 2561, with an area size of 1,568.737 square kilometers and 138 hospitals, the equation would be as follows:
+
+`√Ŷ = 1.246239 - 0.6116317(1) + 2.287857(1) + 0.000310(1,568.737) + 0.100957(138)`
+
+Therefore, the estimated number of Dengue Hemorrhagic Fever patients in the central region provinces is approximately equal to "Ŷ" = "17.3408"² = 300.7047 ≈ **301 individuals**.

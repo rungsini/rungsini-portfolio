@@ -148,7 +148,7 @@ The plot shows random dispersion of residuals around zero without any clear patt
 - **Autocorrelation Examination in GLS Model:** 
 To examine the autocorrelation in the GLS model, the autocorrelation function (ACF) and partial autocorrelation function (PACF) plots were analyzed.
 
-![pic12](acf-pacf_gls.jpg)
+![pic12](acf-pacf_glsN.jpg)
 
 From the figure, it is evident that the model has a p = 0 and a q = 0, indicating no significant autocorrelation. This suggests that the residuals of the GLS model are independent.
 
@@ -195,7 +195,7 @@ The graph shows a plot of residuals against estimated values. The distribution i
 - **Autocorrelation Examination in Adjusted GLS Model:** 
 To assess the variance of the adjusted GLS model, a scatter plot of residuals against estimated values was created. 
 
-![pic14](acf-pacf_adj_gls.jpg)
+![pic14](acf-pacf_adj_glsN.jpg)
 
 The plot shows random dispersion of residuals around the zero axis without any clear pattern, indicating constant variance (homoscedasticity). This suggests that the adjusted GLS model adequately addresses the issue of non-constant variance in the data.
 

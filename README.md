@@ -35,19 +35,40 @@
 #### Example :
 - **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)** ![pic1](graph_pic/pic1.jpg)
 
-- **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)-Divided by Geographic Region** ![pic2](graph_pic/pic2.jpg) The Spaghetti Plot, depicting the number of dengue fever patients each year categorized by region, reveals a similar pattern across all regions. In each year, the number of patients tends to increase. There is a peak point during the rainy season of each year where the number of patients reaches its highest. Additionally, the data suggests a seasonal cyclicality.
+- **Y-axis: Number of DHF (Cases) and X-axis: Time (Months)-Divided by Geographic Region** 
 
-- **Y-axis: Number of DHF (Cases) and X-axis: Average Temperature (°C)** ![pic3](graph_pic/pic3.jpg) The Scatter Plot shows the relationship between dengue fever cases and average temperature. It reveals a concentration of cases within the 28-32 degrees Celsius temperature range. However, caution is warranted due to potential data collection inconsistencies and Thailand's consistently warm climate, which ranges from 28-35 degrees Celsius on average. Therefore, definitive conclusions about data accuracy cannot be drawn from this graph alone.
+![pic2](graph_pic/pic2.jpg) 
 
-- **Y-axis: Number of DHF (Cases) and X-axis: Rainfall Amount (Millimeters)** ![pic4](graph_pic/pic4.jpg) 
+The Spaghetti Plot, depicting the number of dengue fever patients each year categorized by region, reveals a similar pattern across all regions. In each year, the number of patients tends to increase. There is a peak point during the rainy season of each year where the number of patients reaches its highest. Additionally, the data suggests a seasonal cyclicality.
+
+- **Y-axis: Number of DHF (Cases) and X-axis: Average Temperature (°C)** 
+
+![pic3](graph_pic/pic3.jpg) 
+
+The Scatter Plot shows the relationship between dengue fever cases and average temperature. It reveals a concentration of cases within the 28-32 degrees Celsius temperature range. However, caution is warranted due to potential data collection inconsistencies and Thailand's consistently warm climate, which ranges from 28-35 degrees Celsius on average. Therefore, definitive conclusions about data accuracy cannot be drawn from this graph alone.
+
+- **Y-axis: Number of DHF (Cases) and X-axis: Rainfall Amount (Millimeters)** 
+
+![pic4](graph_pic/pic4.jpg)
+
 From the Scatter Plot, which displays the number of patients with dengue fever and the rainfall quantity, it can be observed that the graph line tends to increase and extend horizontally. Generally, a higher number of patients are observed in the range of 0-500 millimeters of rainfall. However, it is still difficult to draw significant conclusions from the data.
 
-- **Y-axis: Number of DHF (Cases) and X-axis: Population Size (Individuals)** ![pic5](graph_pic/pic5.jpg) 
+- **Y-axis: Number of DHF (Cases) and X-axis: Population Size (Individuals)** 
+
+![pic5](graph_pic/pic5.jpg) 
+
 The graph demonstrates a positive correlation between the number of dengue fever patients and the population count. As the population increases in each province, there is a clear trend of the number of patients also increasing.
 
-- **Y-axis: Number of DHF (Cases) and X-axis: Area (Square Kilometers)** ![pic6](graph_pic/pic6.jpg) From the scatter plot graph depicting the number of dengue fever patients and the area size, it can be observed that the graph trend is not very distinct. This is because Bangkok, the capital city, has a relatively small area compared to its population. Additionally, Bangkok's status as the capital leads to a high concentration of people residing there. As a result, the number of patients does not align well with the area size.
+- **Y-axis: Number of DHF (Cases) and X-axis: Area (Square Kilometers)** 
 
-- **Y-axis: Number of DHF (Cases) and X-axis: Number of Hospitals (Units)** ![pic7](graph_pic/pic7.jpg) The scatter plot clearly shows a noticeable trend between the number of dengue fever patients and the number of hospitals: as the number of hospitals increases, the number of patients tends to increase as well. However, it may not accurately represent the true trend due to the significantly higher number of hospitals in Bangkok (138) compared to other provinces, where the number of hospitals does not exceed 50. This suggests that the data from Bangkok heavily influences the upward trajectory of the graph.
+![pic6](graph_pic/pic6.jpg)
+
+From the scatter plot graph depicting the number of dengue fever patients and the area size, it can be observed that the graph trend is not very distinct. This is because Bangkok, the capital city, has a relatively small area compared to its population. Additionally, Bangkok's status as the capital leads to a high concentration of people residing there. As a result, the number of patients does not align well with the area size.
+
+- **Y-axis: Number of DHF (Cases) and X-axis: Number of Hospitals (Units)** 
+![pic7](graph_pic/pic7.jpg)
+
+The scatter plot clearly shows a noticeable trend between the number of dengue fever patients and the number of hospitals: as the number of hospitals increases, the number of patients tends to increase as well. However, it may not accurately represent the true trend due to the significantly higher number of hospitals in Bangkok (138) compared to other provinces, where the number of hospitals does not exceed 50. This suggests that the data from Bangkok heavily influences the upward trajectory of the graph.
 
 - **For additional R code, please refer to the following GitHub repository:** [graph_code.R](https://github.com/rungsini/rungsini-portfolio/blob/f83c734c54f87be5800fa53964aefb2d838cc98e/graph_code.R)
 
@@ -90,7 +111,9 @@ From Table, which the correlation coefficients for average temperature, rainfall
 *Analyzing the relationships between the average temperature, rainfall amount, population size, area size, number of hospitals, and the number of cases of dengue hemorrhagic fever. **The Generalized Least Squares** method, a commonly used regression technique, was employed to develop a model for predicting the number of dengue hemorrhagic fever cases.*
 
 #### Example : Model for the number of dengue fever patients in the central region.
-- **Multiple Linear Regression Model:** `Number of DHF (Cases) ~ Year + Month + Average Temperature + Rainfall Amount + Population Size + Area + Number of Hospitals`
+- **Multiple Linear Regression Model:** 
+
+`Number of DHF (Cases) ~ Year + Month + Average Temperature + Rainfall Amount + Population Size + Area + Number of Hospitals`
 
 - **Preliminary Examination:** ![pic8](preliminary_assumtions.jpg)
 From the graph, it can be observed that the residuals do not meet the assumption of randomness and show a pattern. The Normal Q-Q plot indicates that the data is not significantly deviating from normal distribution. Most of the data points used for analysis are not outliers.
@@ -99,15 +122,29 @@ From the graph, it can be observed that the residuals do not meet the assumption
 Upon examining the autocorrelation function (ACF) and partial autocorrelation function (PACF) plots, the following patterns can be observed. ![pic9](acf-pacf.jpg)
 From the figure, it is evident that the model has a p = 2 and a q = 2, which can be represented by the following equation
 
-- **Autoregressive Moving Average (ARMA(2,2)):** ![pic10](amar(2,2).jpg)
+- **Autoregressive Moving Average (ARMA(2,2)):** 
+
+`Y_t = δ + 0.3010*Y_{t-1} + 0.4632*Y_{t-2} + u_t - 0.7905*u_{t-1} - 0.1025*u_{t-2}`
+
 The analysis reveals autocorrelation in the residuals, indicating a lack of independence. Additionally, there are issues of non-constant variance. To address these problems, the data was analyzed using the generalized least squares method. The resulting model is as follows.
 
-- **Generalized Least Squares (GLS):** `√Number of DHF (Cases) ~ Year + Month + Average Temperature + Rainfall Amount + Population Size^2 + Area + Number of Hospitals`
+- **Generalized Least Squares (GLS):** 
+
+`√Number of DHF (Cases) ~ Year + Month + Average Temperature + Rainfall Amount + Population Size^2 + Area + Number of Hospitals`
+
 and when examining the variance and autocorrelation within the variable itself, the following patterns are observed
 
-- **Variance Assessment of GLS Model:** ![pic11](var_gls.jpg) The scatter plot of residuals against predicted values shows random dispersion around zero without any clear pattern, indicating constant variance (homoscedasticity).
+- **Variance Assessment of GLS Model:** 
 
-- **Autocorrelation Examination in GLS Model:** ![pic12](acf-pacf_gls.jpg) From the figure, it is evident that the model has a p = 0 and a q = 0, indicating no significant autocorrelation. Additionally, the regression analysis table is obtained as follows.
+![pic11](var_gls.jpg)
+
+The scatter plot of residuals against predicted values shows random dispersion around zero without any clear pattern, indicating constant variance (homoscedasticity).
+
+- **Autocorrelation Examination in GLS Model:** 
+
+![pic12](acf-pacf_gls.jpg)
+
+From the figure, it is evident that the model has a p = 0 and a q = 0, indicating no significant autocorrelation. Additionally, the regression analysis table is obtained as follows.
 
 - **The Regression Coefficients Table Obtained from GLS Model:**
 
@@ -137,13 +174,29 @@ and when examining the variance and autocorrelation within the variable itself, 
 
 From Table, the p-values for average temperature, rainfall amount, population, and population squared are 0.0823, 0.1438, 0.0990, and 0.2953, respectively. These factors are not statistically significant at the 0.05 level and do not affect the number of dengue fever cases. Therefore, they are excluded from the model, resulting in the optimal model for the number of dengue fever cases in the central region as...
 
-- **Adjusted GLS Model in Central Region:** `√Number of DHF (Cases) ~ Year + Month + Area + Number of Hospitals` and when examining the variance and autocorrelation within the variable itself, the following patterns are observed
+- **Adjusted GLS Model in Central Region:** 
 
-- **Variance Assessment of Adjusted GLS Model:** ![pic13](adj_var_gls.jpg) The graph shows a plot of residuals against estimated values. The distribution is randomly scattered around the zero axis, without a clear pattern. This indicates constant variability, suggesting a constant variance.
+`√Number of DHF (Cases) ~ Year + Month + Area + Number of Hospitals` 
 
-- **Autocorrelation Examination in Adjusted GLS Model:** ![pic14](acf-pacf_adj_gls.jpg) Based on the observed graph, it can be concluded that there is no autocorrelation present. This implies that the residuals exhibit independence, indicating a lack of correlation between consecutive data points.
+and when examining the variance and autocorrelation within the variable itself, the following patterns are observed
 
-- **Histogram of residuals in the central region:** ![pic1](hist_adj_gls.jpg) Based on the graph, it is evident that the residuals follow an approximately normal distribution, resembling a normal distribution. This indicates that the adjusted model is well-suited for this dataset. Upon analysis, the regression analysis table is obtained as presented below.
+- **Variance Assessment of Adjusted GLS Model:** 
+
+![pic13](var_adj_gls.jpg)
+
+The graph shows a plot of residuals against estimated values. The distribution is randomly scattered around the zero axis, without a clear pattern. This indicates constant variability, suggesting a constant variance.
+
+- **Autocorrelation Examination in Adjusted GLS Model:** 
+
+![pic14](acf-pacf_adj_gls.jpg)
+
+Based on the observed graph, it can be concluded that there is no autocorrelation present. This implies that the residuals exhibit independence, indicating a lack of correlation between consecutive data points.
+
+- **Histogram of residuals in the central region:** 
+
+![pic1](hist_adj_gls.jpg)
+
+Based on the graph, it is evident that the residuals follow an approximately normal distribution, resembling a normal distribution. This indicates that the adjusted model is well-suited for this dataset. Upon analysis, the regression analysis table is obtained as presented below.
 
 - **The Regression Coefficients Table Obtained from Adjusted GLS Model:**
 
@@ -169,12 +222,16 @@ From Table, the p-values for average temperature, rainfall amount, population, a
 
 From the table, it can be observed that if other factors remain constant, an increase in area by 1 square kilometer will result in an increase of 0.000310 √people in the number of patients. Similarly, an increase in the number of hospitals by 1 will lead to an increase of 0.100957 √people in the number of patients. Additionally, if we want to predict the number of patients in March, it will increase from January of the year 2560 (intercept) by 0.450990 √people. Based on this table, a suitable model can be constructed.
 
-- **Appropriate Model for the Number of Dengue Hemorrhagic Fever Cases in Central Regions of Thailand:** `√Ŷ = 1.246239 - 0.611631*D1 - 1.512549*D2 - 0.272062*D3 - 0.163333*M1 + 0.450990*M2 - 4.406418*M3 - 0.529713*M4 + 2.287857*M5 - 0.005708*M6 - 0.881540*M7  + 1.042274*M8 - 0.120981*M9 - 0.152349*M10 + 0.104366*M11 + 0.000310*X_Area + 0.100957*X_No. of Hospital`
+- **Appropriate Model for the Number of Dengue Hemorrhagic Fever Cases in Central Regions of Thailand:** 
+
+`√Ŷ = 1.246239 - 0.611631*D1 - 1.512549*D2 - 0.272062*D3 - 0.163333*M1 + 0.450990*M2 - 4.406418*M3 - 0.529713*M4 + 2.287857*M5 - 0.005708*M6 - 0.881540*M7  + 1.042274*M8 - 0.120981*M9 - 0.152349*M10 + 0.104366*M11 + 0.000310*X_Area + 0.100957*X_No. of Hospital`
 
 - **Example of Model Usage:** If we want to forecast the number of patients with Dengue Hemorrhagic Fever in June, 2561, with an area size of 1,568.737 square kilometers and 138 hospitals, the equation would be as follows:
 
 `√Ŷ = 1.246239 - 0.6116317(1) + 2.287857(1) + 0.000310(1,568.737) + 0.100957(138)`
 
-Therefore, the estimated number of Dengue Hemorrhagic Fever patients in the central region provinces is approximately equal to `Ŷ = "17.3408"²` = `300.7047` ≈ `301 individuals`.
+Therefore, the estimated number of Dengue Hemorrhagic Fever patients in the central region provinces is approximately equal to 
 
-- **For additional R code, please refer to the following GitHub repository:** [model_code.R] https://github.com/rungsini/rungsini-portfolio/blob/d27804ded75a89b8d5b13e542b8d01439916d6bb/model_code.R
+**`Ŷ = "17.3408"²` = `300.7047` ≈ `301 individuals`
+
+- **For additional R code, please refer to the following GitHub repository:** [model_code.R](https://github.com/rungsini/rungsini-portfolio/blob/d27804ded75a89b8d5b13e542b8d01439916d6bb/model_code.R)
